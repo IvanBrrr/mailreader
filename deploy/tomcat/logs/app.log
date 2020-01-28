@@ -1,0 +1,1097 @@
+2020-01-28 21:21:24.239 INFO  [main] com.haulmont.cuba.core.sys.AppComponents - Using app components: [com.haulmont.cuba]
+2020-01-28 21:21:24.619 INFO  [main] com.haulmont.cuba.core.sys.AbstractWebAppContextLoader - Loading app properties from classpath:com/company/mailreader/web-app.properties
+2020-01-28 21:21:25.108 INFO  [main] com.haulmont.cuba.core.sys.environmentcheck.EnvironmentChecksRunner - Environment checks on web module completed successfully
+2020-01-28 21:21:30.715 INFO  [main] com.haulmont.cuba.core.sys.remoting.discovery.StaticServerSelector - Server URLs: [http://localhost:8080/app-core/remoting]
+2020-01-28 21:21:30.863 INFO  [main] com.haulmont.cuba.web.sys.remoting.WebRemoteProxyBeanCreator - Configuring proxy beans for local service invocations: [cuba_ConstraintScriptValidationService, cuba_AuthenticationService, cuba_TrustedClientService, cuba_ServerInfoService, cuba_UserSettingService, cuba_UserManagementService, cuba_DataService, cuba_ConfigStorageService, cuba_PersistenceManagerService, cuba_LockService, cuba_UserSessionService, cuba_FoldersService, cuba_EmailService, cuba_FileStorageService, cuba_EntitySnapshotService, cuba_UniqueNumbersService, cuba_LocalizedMessageService, cuba_ResourceService, cuba_ScheduledTasksService, cuba_EntityLogService, cuba_TestingService, cuba_DomainDescriptionService, cuba_RelatedEntitiesService, cuba_EntitySqlGenerationService, cuba_NumberIdService, cuba_QueryResultsService, cuba_DynamicAttributesCacheService, cuba_EntityRestoreService, cuba_LocalFileExchangeService, cuba_EntityImportExportService, cuba_ConstraintLocalizationService, cuba_AttributeAccessService, cuba_ExceptionReportService, cuba_BulkEditorDataService, cuba_AttributeOptionsLoaderService]
+2020-01-28 21:21:30.864 INFO  [main] com.haulmont.cuba.web.sys.remoting.WebRemoteProxyBeanCreator - Configuring proxy beans for local service invocations: [mailreader_ImapService, mailreader_ReceiveEmailsService]
+2020-01-28 21:21:38.898 INFO  [main] com.haulmont.cuba.core.sys.CubaThreadPoolTaskScheduler - Initializing ExecutorService 'scheduler'
+2020-01-28 21:21:39.655 INFO  [main] com.haulmont.cuba.core.sys.jmx.MBeanExporter - Registering beans for JMX exposure: [app.cuba:type=ConfigStorage, app.cuba:type=CachingFacade, app.cuba:type=FileUploading, app.cuba:type=JmxNodeIdentifier, app.cuba:type=JmxLogControl, app.cuba:type=ClassLoaderManager, app.cuba:type=StatisticsCounter]
+2020-01-28 21:21:40.099 DEBUG [main] com.haulmont.cuba.gui.components.impl.ActionsImpl - Actions initialized in 224 ms
+2020-01-28 21:21:40.285 INFO  [main] com.haulmont.cuba.core.sys.MetadataImpl - Initializing metadata
+2020-01-28 21:21:40.854 INFO  [main] com.haulmont.cuba.core.sys.MetadataImpl - Metadata initialized in 568 ms
+2020-01-28 21:21:40.931 INFO  [main] com.haulmont.cuba.core.sys.AbstractWebAppContextLoader - AppContext started
+2020-01-28 21:21:41.351 INFO  [main] com.haulmont.cuba.web.sys.CubaDispatcherServlet - Initializing Servlet 'dispatcher'
+2020-01-28 21:21:42.338 DEBUG [main] org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider
+2020-01-28 21:21:43.467 INFO  [main] com.haulmont.cuba.web.sys.CubaDispatcherServlet - Completed initialization in 2116 ms
+2020-01-28 21:21:44.342 INFO  [main] com.haulmont.cuba.core.sys.AppComponents - Using app components: [com.haulmont.cuba]
+2020-01-28 21:21:44.351 INFO  [main] com.haulmont.cuba.core.sys.AbstractWebAppContextLoader - Loading app properties from classpath:com/company/mailreader/app.properties
+2020-01-28 21:21:44.366 INFO  [main] com.haulmont.cuba.core.sys.AppContextLoader - DbmsType of the main database is set to hsql
+2020-01-28 21:21:44.515 INFO  [main] com.haulmont.cuba.core.sys.environmentcheck.DataStoresCheck - Checking connection to data store _MAIN_
+2020-01-28 21:21:45.777 INFO  [main] com.haulmont.cuba.core.sys.environmentcheck.EnvironmentChecksRunner - Environment checks on core module completed successfully
+2020-01-28 21:21:46.212 INFO  [main] com.haulmont.cuba.core.sys.persistence.PersistenceConfigProcessor - Creating file /home/brrr/StudioProjects/mailreader/deploy/tomcat/work/app-core/persistence.xml
+2020-01-28 21:21:55.706 INFO  [main] com.haulmont.cuba.core.sys.CubaThreadPoolTaskScheduler - Initializing ExecutorService 'scheduler'
+2020-01-28 21:21:55.905 WARN  [main] com.haulmont.cuba.core.sys.CubaCoreApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mailreader_ImapService' defined in URL [jar:file:/home/brrr/StudioProjects/mailreader/deploy/tomcat/webapps/app-core/WEB-INF/lib/app-core-0.1-SNAPSHOT.jar!/com/company/mailreader/service/ImapServiceBean.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'java.lang.String' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2020-01-28 21:21:55.905 INFO  [main] com.haulmont.cuba.core.sys.CubaThreadPoolTaskScheduler - Shutting down ExecutorService 'scheduler'
+2020-01-28 21:21:55.975 ERROR [main] com.haulmont.cuba.core.sys.AbstractWebAppContextLoader - Error initializing application
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mailreader_ImapService' defined in URL [jar:file:/home/brrr/StudioProjects/mailreader/deploy/tomcat/webapps/app-core/WEB-INF/lib/app-core-0.1-SNAPSHOT.jar!/com/company/mailreader/service/ImapServiceBean.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'java.lang.String' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:769) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:218) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1341) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1187) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:144) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:95) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext.<init>(CubaClassPathXmlApplicationContext.java:27) ~[cuba-global-7.1.3.jar:7.1.3]
+	at com.haulmont.cuba.core.sys.CubaCoreApplicationContext.<init>(CubaCoreApplicationContext.java:26) ~[cuba-core-7.1.3.jar:7.1.3]
+	at com.haulmont.cuba.core.sys.AppContextLoader.createApplicationContext(AppContextLoader.java:94) ~[cuba-core-7.1.3.jar:7.1.3]
+	at com.haulmont.cuba.core.sys.AppContextLoader.createApplicationContext(AppContextLoader.java:39) ~[cuba-core-7.1.3.jar:7.1.3]
+	at com.haulmont.cuba.core.sys.AbstractAppContextLoader.initAppContext(AbstractAppContextLoader.java:62) ~[cuba-global-7.1.3.jar:7.1.3]
+	at com.haulmont.cuba.core.sys.AbstractWebAppContextLoader.contextInitialized(AbstractWebAppContextLoader.java:78) ~[cuba-global-7.1.3.jar:7.1.3]
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4682) [catalina.jar:9.0.19]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5150) [catalina.jar:9.0.19]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.19]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:713) [catalina.jar:9.0.19]
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:690) [catalina.jar:9.0.19]
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:695) [catalina.jar:9.0.19]
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1133) [catalina.jar:9.0.19]
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1867) [catalina.jar:9.0.19]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_231]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_231]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) [tomcat-util.jar:9.0.19]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112) [na:1.8.0_231]
+	at org.apache.catalina.startup.HostConfig.deployDirectories(HostConfig.java:1045) [catalina.jar:9.0.19]
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:429) [catalina.jar:9.0.19]
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1576) [catalina.jar:9.0.19]
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:309) [catalina.jar:9.0.19]
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123) [catalina.jar:9.0.19]
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423) [catalina.jar:9.0.19]
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:366) [catalina.jar:9.0.19]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:929) [catalina.jar:9.0.19]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:831) [catalina.jar:9.0.19]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.19]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1377) [catalina.jar:9.0.19]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1367) [catalina.jar:9.0.19]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_231]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) [tomcat-util.jar:9.0.19]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134) [na:1.8.0_231]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:902) [catalina.jar:9.0.19]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262) [catalina.jar:9.0.19]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.19]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:423) [catalina.jar:9.0.19]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.19]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:932) [catalina.jar:9.0.19]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.19]
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:633) [catalina.jar:9.0.19]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_231]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_231]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_231]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_231]
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:350) [bootstrap.jar:9.0.19]
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:492) [bootstrap.jar:9.0.19]
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'java.lang.String' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1654) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1213) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at com.haulmont.cuba.core.sys.CubaDefaultListableBeanFactory.resolveDependency(CubaDefaultListableBeanFactory.java:59) ~[cuba-global-7.1.3.jar:7.1.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	... 61 common frames omitted
+2020-01-28 21:24:40.206 INFO  [main] com.haulmont.cuba.core.sys.AppComponents - Using app components: [com.haulmont.cuba]
+2020-01-28 21:24:40.495 INFO  [main] com.haulmont.cuba.core.sys.AbstractWebAppContextLoader - Loading app properties from classpath:com/company/mailreader/web-app.properties
+2020-01-28 21:24:40.904 INFO  [main] com.haulmont.cuba.core.sys.environmentcheck.EnvironmentChecksRunner - Environment checks on web module completed successfully
+2020-01-28 21:24:44.129 INFO  [main] com.haulmont.cuba.core.sys.remoting.discovery.StaticServerSelector - Server URLs: [http://localhost:8080/app-core/remoting]
+2020-01-28 21:24:44.169 INFO  [main] com.haulmont.cuba.web.sys.remoting.WebRemoteProxyBeanCreator - Configuring proxy beans for local service invocations: [cuba_ConstraintScriptValidationService, cuba_AuthenticationService, cuba_TrustedClientService, cuba_ServerInfoService, cuba_UserSettingService, cuba_UserManagementService, cuba_DataService, cuba_ConfigStorageService, cuba_PersistenceManagerService, cuba_LockService, cuba_UserSessionService, cuba_FoldersService, cuba_EmailService, cuba_FileStorageService, cuba_EntitySnapshotService, cuba_UniqueNumbersService, cuba_LocalizedMessageService, cuba_ResourceService, cuba_ScheduledTasksService, cuba_EntityLogService, cuba_TestingService, cuba_DomainDescriptionService, cuba_RelatedEntitiesService, cuba_EntitySqlGenerationService, cuba_NumberIdService, cuba_QueryResultsService, cuba_DynamicAttributesCacheService, cuba_EntityRestoreService, cuba_LocalFileExchangeService, cuba_EntityImportExportService, cuba_ConstraintLocalizationService, cuba_AttributeAccessService, cuba_ExceptionReportService, cuba_BulkEditorDataService, cuba_AttributeOptionsLoaderService]
+2020-01-28 21:24:44.171 INFO  [main] com.haulmont.cuba.web.sys.remoting.WebRemoteProxyBeanCreator - Configuring proxy beans for local service invocations: [mailreader_ImapService, mailreader_ReceiveEmailsService]
+2020-01-28 21:24:45.980 INFO  [main] com.haulmont.cuba.core.sys.CubaThreadPoolTaskScheduler - Initializing ExecutorService 'scheduler'
+2020-01-28 21:24:46.303 INFO  [main] com.haulmont.cuba.core.sys.jmx.MBeanExporter - Registering beans for JMX exposure: [app.cuba:type=ConfigStorage, app.cuba:type=CachingFacade, app.cuba:type=FileUploading, app.cuba:type=JmxNodeIdentifier, app.cuba:type=JmxLogControl, app.cuba:type=ClassLoaderManager, app.cuba:type=StatisticsCounter]
+2020-01-28 21:24:46.531 DEBUG [main] com.haulmont.cuba.gui.components.impl.ActionsImpl - Actions initialized in 73 ms
+2020-01-28 21:24:46.547 INFO  [main] com.haulmont.cuba.core.sys.MetadataImpl - Initializing metadata
+2020-01-28 21:24:46.864 INFO  [main] com.haulmont.cuba.core.sys.MetadataImpl - Metadata initialized in 316 ms
+2020-01-28 21:24:46.890 INFO  [main] com.haulmont.cuba.core.sys.AbstractWebAppContextLoader - AppContext started
+2020-01-28 21:24:46.980 INFO  [main] com.haulmont.cuba.web.sys.CubaDispatcherServlet - Initializing Servlet 'dispatcher'
+2020-01-28 21:24:47.539 DEBUG [main] org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider
+2020-01-28 21:24:48.483 INFO  [main] com.haulmont.cuba.web.sys.CubaDispatcherServlet - Completed initialization in 1503 ms
+2020-01-28 21:24:48.661 INFO  [main] com.haulmont.cuba.core.sys.AppComponents - Using app components: [com.haulmont.cuba]
+2020-01-28 21:24:48.670 INFO  [main] com.haulmont.cuba.core.sys.AbstractWebAppContextLoader - Loading app properties from classpath:com/company/mailreader/app.properties
+2020-01-28 21:24:48.676 INFO  [main] com.haulmont.cuba.core.sys.AppContextLoader - DbmsType of the main database is set to hsql
+2020-01-28 21:24:48.701 INFO  [main] com.haulmont.cuba.core.sys.environmentcheck.DataStoresCheck - Checking connection to data store _MAIN_
+2020-01-28 21:24:49.376 INFO  [main] com.haulmont.cuba.core.sys.environmentcheck.EnvironmentChecksRunner - Environment checks on core module completed successfully
+2020-01-28 21:24:49.497 INFO  [main] com.haulmont.cuba.core.sys.persistence.PersistenceConfigProcessor - Creating file /home/brrr/StudioProjects/mailreader/deploy/tomcat/work/app-core/persistence.xml
+2020-01-28 21:24:56.544 INFO  [main] com.haulmont.cuba.core.sys.CubaThreadPoolTaskScheduler - Initializing ExecutorService 'scheduler'
+2020-01-28 21:24:56.614 WARN  [main] com.haulmont.cuba.core.sys.CubaCoreApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mailreader_ImapService' defined in URL [jar:file:/home/brrr/StudioProjects/mailreader/deploy/tomcat/webapps/app-core/WEB-INF/lib/app-core-0.1-SNAPSHOT.jar!/com/company/mailreader/service/ImapServiceBean.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'java.lang.String' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2020-01-28 21:24:56.614 INFO  [main] com.haulmont.cuba.core.sys.CubaThreadPoolTaskScheduler - Shutting down ExecutorService 'scheduler'
+2020-01-28 21:24:56.640 ERROR [main] com.haulmont.cuba.core.sys.AbstractWebAppContextLoader - Error initializing application
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mailreader_ImapService' defined in URL [jar:file:/home/brrr/StudioProjects/mailreader/deploy/tomcat/webapps/app-core/WEB-INF/lib/app-core-0.1-SNAPSHOT.jar!/com/company/mailreader/service/ImapServiceBean.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'java.lang.String' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:769) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:218) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1341) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1187) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:144) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:95) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext.<init>(CubaClassPathXmlApplicationContext.java:27) ~[cuba-global-7.1.3.jar:7.1.3]
+	at com.haulmont.cuba.core.sys.CubaCoreApplicationContext.<init>(CubaCoreApplicationContext.java:26) ~[cuba-core-7.1.3.jar:7.1.3]
+	at com.haulmont.cuba.core.sys.AppContextLoader.createApplicationContext(AppContextLoader.java:94) ~[cuba-core-7.1.3.jar:7.1.3]
+	at com.haulmont.cuba.core.sys.AppContextLoader.createApplicationContext(AppContextLoader.java:39) ~[cuba-core-7.1.3.jar:7.1.3]
+	at com.haulmont.cuba.core.sys.AbstractAppContextLoader.initAppContext(AbstractAppContextLoader.java:62) ~[cuba-global-7.1.3.jar:7.1.3]
+	at com.haulmont.cuba.core.sys.AbstractWebAppContextLoader.contextInitialized(AbstractWebAppContextLoader.java:78) ~[cuba-global-7.1.3.jar:7.1.3]
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4682) [catalina.jar:9.0.19]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5150) [catalina.jar:9.0.19]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.19]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:713) [catalina.jar:9.0.19]
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:690) [catalina.jar:9.0.19]
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:695) [catalina.jar:9.0.19]
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1133) [catalina.jar:9.0.19]
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1867) [catalina.jar:9.0.19]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_231]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_231]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) [tomcat-util.jar:9.0.19]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112) [na:1.8.0_231]
+	at org.apache.catalina.startup.HostConfig.deployDirectories(HostConfig.java:1045) [catalina.jar:9.0.19]
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:429) [catalina.jar:9.0.19]
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1576) [catalina.jar:9.0.19]
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:309) [catalina.jar:9.0.19]
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123) [catalina.jar:9.0.19]
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423) [catalina.jar:9.0.19]
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:366) [catalina.jar:9.0.19]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:929) [catalina.jar:9.0.19]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:831) [catalina.jar:9.0.19]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.19]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1377) [catalina.jar:9.0.19]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1367) [catalina.jar:9.0.19]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_231]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) [tomcat-util.jar:9.0.19]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134) [na:1.8.0_231]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:902) [catalina.jar:9.0.19]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262) [catalina.jar:9.0.19]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.19]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:423) [catalina.jar:9.0.19]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.19]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:932) [catalina.jar:9.0.19]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.19]
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:633) [catalina.jar:9.0.19]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_231]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_231]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_231]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_231]
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:350) [bootstrap.jar:9.0.19]
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:492) [bootstrap.jar:9.0.19]
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'java.lang.String' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1654) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1213) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at com.haulmont.cuba.core.sys.CubaDefaultListableBeanFactory.resolveDependency(CubaDefaultListableBeanFactory.java:59) ~[cuba-global-7.1.3.jar:7.1.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	... 61 common frames omitted
+2020-01-28 21:26:18.461 INFO  [main] com.haulmont.cuba.core.sys.AppComponents - Using app components: [com.haulmont.cuba]
+2020-01-28 21:26:18.532 INFO  [main] com.haulmont.cuba.core.sys.AbstractWebAppContextLoader - Loading app properties from classpath:com/company/mailreader/web-app.properties
+2020-01-28 21:26:18.619 INFO  [main] com.haulmont.cuba.core.sys.environmentcheck.EnvironmentChecksRunner - Environment checks on web module completed successfully
+2020-01-28 21:26:20.862 INFO  [main] com.haulmont.cuba.core.sys.remoting.discovery.StaticServerSelector - Server URLs: [http://localhost:8080/app-core/remoting]
+2020-01-28 21:26:20.884 INFO  [main] com.haulmont.cuba.web.sys.remoting.WebRemoteProxyBeanCreator - Configuring proxy beans for local service invocations: [cuba_ConstraintScriptValidationService, cuba_AuthenticationService, cuba_TrustedClientService, cuba_ServerInfoService, cuba_UserSettingService, cuba_UserManagementService, cuba_DataService, cuba_ConfigStorageService, cuba_PersistenceManagerService, cuba_LockService, cuba_UserSessionService, cuba_FoldersService, cuba_EmailService, cuba_FileStorageService, cuba_EntitySnapshotService, cuba_UniqueNumbersService, cuba_LocalizedMessageService, cuba_ResourceService, cuba_ScheduledTasksService, cuba_EntityLogService, cuba_TestingService, cuba_DomainDescriptionService, cuba_RelatedEntitiesService, cuba_EntitySqlGenerationService, cuba_NumberIdService, cuba_QueryResultsService, cuba_DynamicAttributesCacheService, cuba_EntityRestoreService, cuba_LocalFileExchangeService, cuba_EntityImportExportService, cuba_ConstraintLocalizationService, cuba_AttributeAccessService, cuba_ExceptionReportService, cuba_BulkEditorDataService, cuba_AttributeOptionsLoaderService]
+2020-01-28 21:26:20.886 INFO  [main] com.haulmont.cuba.web.sys.remoting.WebRemoteProxyBeanCreator - Configuring proxy beans for local service invocations: [mailreader_ImapService, mailreader_ReceiveEmailsService]
+2020-01-28 21:26:22.407 INFO  [main] com.haulmont.cuba.core.sys.CubaThreadPoolTaskScheduler - Initializing ExecutorService 'scheduler'
+2020-01-28 21:26:22.646 INFO  [main] com.haulmont.cuba.core.sys.jmx.MBeanExporter - Registering beans for JMX exposure: [app.cuba:type=ConfigStorage, app.cuba:type=CachingFacade, app.cuba:type=FileUploading, app.cuba:type=JmxNodeIdentifier, app.cuba:type=JmxLogControl, app.cuba:type=ClassLoaderManager, app.cuba:type=StatisticsCounter]
+2020-01-28 21:26:22.807 DEBUG [main] com.haulmont.cuba.gui.components.impl.ActionsImpl - Actions initialized in 45 ms
+2020-01-28 21:26:22.813 INFO  [main] com.haulmont.cuba.core.sys.MetadataImpl - Initializing metadata
+2020-01-28 21:26:23.077 INFO  [main] com.haulmont.cuba.core.sys.MetadataImpl - Metadata initialized in 264 ms
+2020-01-28 21:26:23.103 INFO  [main] com.haulmont.cuba.core.sys.AbstractWebAppContextLoader - AppContext started
+2020-01-28 21:26:23.128 INFO  [main] com.haulmont.cuba.web.sys.CubaDispatcherServlet - Initializing Servlet 'dispatcher'
+2020-01-28 21:26:23.485 DEBUG [main] org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider
+2020-01-28 21:26:24.097 INFO  [main] com.haulmont.cuba.web.sys.CubaDispatcherServlet - Completed initialization in 969 ms
+2020-01-28 21:26:24.169 INFO  [main] com.haulmont.cuba.core.sys.AppComponents - Using app components: [com.haulmont.cuba]
+2020-01-28 21:26:24.176 INFO  [main] com.haulmont.cuba.core.sys.AbstractWebAppContextLoader - Loading app properties from classpath:com/company/mailreader/app.properties
+2020-01-28 21:26:24.182 INFO  [main] com.haulmont.cuba.core.sys.AppContextLoader - DbmsType of the main database is set to hsql
+2020-01-28 21:26:24.189 INFO  [main] com.haulmont.cuba.core.sys.environmentcheck.DataStoresCheck - Checking connection to data store _MAIN_
+2020-01-28 21:26:24.513 INFO  [main] com.haulmont.cuba.core.sys.environmentcheck.EnvironmentChecksRunner - Environment checks on core module completed successfully
+2020-01-28 21:26:24.573 INFO  [main] com.haulmont.cuba.core.sys.persistence.PersistenceConfigProcessor - Creating file /home/brrr/StudioProjects/mailreader/deploy/tomcat/work/app-core/persistence.xml
+2020-01-28 21:26:29.646 INFO  [main] com.haulmont.cuba.core.sys.CubaThreadPoolTaskScheduler - Initializing ExecutorService 'scheduler'
+2020-01-28 21:26:29.711 WARN  [main] com.haulmont.cuba.core.sys.CubaCoreApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mailreader_ImapService' defined in URL [jar:file:/home/brrr/StudioProjects/mailreader/deploy/tomcat/webapps/app-core/WEB-INF/lib/app-core-0.1-SNAPSHOT.jar!/com/company/mailreader/service/ImapServiceBean.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'java.lang.String' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2020-01-28 21:26:29.711 INFO  [main] com.haulmont.cuba.core.sys.CubaThreadPoolTaskScheduler - Shutting down ExecutorService 'scheduler'
+2020-01-28 21:26:29.749 ERROR [main] com.haulmont.cuba.core.sys.AbstractWebAppContextLoader - Error initializing application
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mailreader_ImapService' defined in URL [jar:file:/home/brrr/StudioProjects/mailreader/deploy/tomcat/webapps/app-core/WEB-INF/lib/app-core-0.1-SNAPSHOT.jar!/com/company/mailreader/service/ImapServiceBean.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'java.lang.String' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:769) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:218) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1341) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1187) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:144) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:95) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext.<init>(CubaClassPathXmlApplicationContext.java:27) ~[cuba-global-7.1.3.jar:7.1.3]
+	at com.haulmont.cuba.core.sys.CubaCoreApplicationContext.<init>(CubaCoreApplicationContext.java:26) ~[cuba-core-7.1.3.jar:7.1.3]
+	at com.haulmont.cuba.core.sys.AppContextLoader.createApplicationContext(AppContextLoader.java:94) ~[cuba-core-7.1.3.jar:7.1.3]
+	at com.haulmont.cuba.core.sys.AppContextLoader.createApplicationContext(AppContextLoader.java:39) ~[cuba-core-7.1.3.jar:7.1.3]
+	at com.haulmont.cuba.core.sys.AbstractAppContextLoader.initAppContext(AbstractAppContextLoader.java:62) ~[cuba-global-7.1.3.jar:7.1.3]
+	at com.haulmont.cuba.core.sys.AbstractWebAppContextLoader.contextInitialized(AbstractWebAppContextLoader.java:78) ~[cuba-global-7.1.3.jar:7.1.3]
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4682) [catalina.jar:9.0.19]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5150) [catalina.jar:9.0.19]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.19]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:713) [catalina.jar:9.0.19]
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:690) [catalina.jar:9.0.19]
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:695) [catalina.jar:9.0.19]
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1133) [catalina.jar:9.0.19]
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1867) [catalina.jar:9.0.19]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_231]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_231]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) [tomcat-util.jar:9.0.19]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112) [na:1.8.0_231]
+	at org.apache.catalina.startup.HostConfig.deployDirectories(HostConfig.java:1045) [catalina.jar:9.0.19]
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:429) [catalina.jar:9.0.19]
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1576) [catalina.jar:9.0.19]
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:309) [catalina.jar:9.0.19]
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123) [catalina.jar:9.0.19]
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423) [catalina.jar:9.0.19]
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:366) [catalina.jar:9.0.19]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:929) [catalina.jar:9.0.19]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:831) [catalina.jar:9.0.19]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.19]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1377) [catalina.jar:9.0.19]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1367) [catalina.jar:9.0.19]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_231]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) [tomcat-util.jar:9.0.19]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134) [na:1.8.0_231]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:902) [catalina.jar:9.0.19]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262) [catalina.jar:9.0.19]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.19]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:423) [catalina.jar:9.0.19]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.19]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:932) [catalina.jar:9.0.19]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.19]
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:633) [catalina.jar:9.0.19]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_231]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_231]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_231]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_231]
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:350) [bootstrap.jar:9.0.19]
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:492) [bootstrap.jar:9.0.19]
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'java.lang.String' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1654) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1213) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at com.haulmont.cuba.core.sys.CubaDefaultListableBeanFactory.resolveDependency(CubaDefaultListableBeanFactory.java:59) ~[cuba-global-7.1.3.jar:7.1.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	... 61 common frames omitted
+2020-01-28 21:41:06.053 INFO  [main] com.haulmont.cuba.core.sys.AppComponents - Using app components: [com.haulmont.cuba]
+2020-01-28 21:41:06.383 INFO  [main] com.haulmont.cuba.core.sys.AbstractWebAppContextLoader - Loading app properties from classpath:com/company/mailreader/web-app.properties
+2020-01-28 21:41:06.795 INFO  [main] com.haulmont.cuba.core.sys.environmentcheck.EnvironmentChecksRunner - Environment checks on web module completed successfully
+2020-01-28 21:41:10.510 INFO  [main] com.haulmont.cuba.core.sys.remoting.discovery.StaticServerSelector - Server URLs: [http://localhost:8080/app-core/remoting]
+2020-01-28 21:41:10.632 INFO  [main] com.haulmont.cuba.web.sys.remoting.WebRemoteProxyBeanCreator - Configuring proxy beans for local service invocations: [cuba_ConstraintScriptValidationService, cuba_AuthenticationService, cuba_TrustedClientService, cuba_ServerInfoService, cuba_UserSettingService, cuba_UserManagementService, cuba_DataService, cuba_ConfigStorageService, cuba_PersistenceManagerService, cuba_LockService, cuba_UserSessionService, cuba_FoldersService, cuba_EmailService, cuba_FileStorageService, cuba_EntitySnapshotService, cuba_UniqueNumbersService, cuba_LocalizedMessageService, cuba_ResourceService, cuba_ScheduledTasksService, cuba_EntityLogService, cuba_TestingService, cuba_DomainDescriptionService, cuba_RelatedEntitiesService, cuba_EntitySqlGenerationService, cuba_NumberIdService, cuba_QueryResultsService, cuba_DynamicAttributesCacheService, cuba_EntityRestoreService, cuba_LocalFileExchangeService, cuba_EntityImportExportService, cuba_ConstraintLocalizationService, cuba_AttributeAccessService, cuba_ExceptionReportService, cuba_BulkEditorDataService, cuba_AttributeOptionsLoaderService]
+2020-01-28 21:41:10.633 INFO  [main] com.haulmont.cuba.web.sys.remoting.WebRemoteProxyBeanCreator - Configuring proxy beans for local service invocations: [mailreader_ImapService, mailreader_ReceiveEmailsService]
+2020-01-28 21:41:14.418 INFO  [main] com.haulmont.cuba.core.sys.CubaThreadPoolTaskScheduler - Initializing ExecutorService 'scheduler'
+2020-01-28 21:41:14.864 INFO  [main] com.haulmont.cuba.core.sys.jmx.MBeanExporter - Registering beans for JMX exposure: [app.cuba:type=ConfigStorage, app.cuba:type=CachingFacade, app.cuba:type=FileUploading, app.cuba:type=JmxNodeIdentifier, app.cuba:type=JmxLogControl, app.cuba:type=ClassLoaderManager, app.cuba:type=StatisticsCounter]
+2020-01-28 21:41:15.095 DEBUG [main] com.haulmont.cuba.gui.components.impl.ActionsImpl - Actions initialized in 72 ms
+2020-01-28 21:41:15.101 INFO  [main] com.haulmont.cuba.core.sys.MetadataImpl - Initializing metadata
+2020-01-28 21:41:15.452 INFO  [main] com.haulmont.cuba.core.sys.MetadataImpl - Metadata initialized in 351 ms
+2020-01-28 21:41:15.486 INFO  [main] com.haulmont.cuba.core.sys.AbstractWebAppContextLoader - AppContext started
+2020-01-28 21:41:15.575 INFO  [main] com.haulmont.cuba.web.sys.CubaDispatcherServlet - Initializing Servlet 'dispatcher'
+2020-01-28 21:41:16.189 DEBUG [main] org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider
+2020-01-28 21:41:17.163 INFO  [main] com.haulmont.cuba.web.sys.CubaDispatcherServlet - Completed initialization in 1587 ms
+2020-01-28 21:41:17.398 INFO  [main] com.haulmont.cuba.core.sys.AppComponents - Using app components: [com.haulmont.cuba]
+2020-01-28 21:41:17.406 INFO  [main] com.haulmont.cuba.core.sys.AbstractWebAppContextLoader - Loading app properties from classpath:com/company/mailreader/app.properties
+2020-01-28 21:41:17.412 INFO  [main] com.haulmont.cuba.core.sys.AppContextLoader - DbmsType of the main database is set to hsql
+2020-01-28 21:41:17.433 INFO  [main] com.haulmont.cuba.core.sys.environmentcheck.DataStoresCheck - Checking connection to data store _MAIN_
+2020-01-28 21:41:18.154 INFO  [main] com.haulmont.cuba.core.sys.environmentcheck.EnvironmentChecksRunner - Environment checks on core module completed successfully
+2020-01-28 21:41:18.297 INFO  [main] com.haulmont.cuba.core.sys.persistence.PersistenceConfigProcessor - Creating file /home/brrr/StudioProjects/mailreader/deploy/tomcat/work/app-core/persistence.xml
+2020-01-28 21:41:24.976 INFO  [main] com.haulmont.cuba.core.sys.CubaThreadPoolTaskScheduler - Initializing ExecutorService 'scheduler'
+2020-01-28 21:41:25.071 WARN  [main] com.haulmont.cuba.core.sys.CubaCoreApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mailreader_ImapService' defined in URL [jar:file:/home/brrr/StudioProjects/mailreader/deploy/tomcat/webapps/app-core/WEB-INF/lib/app-core-0.1-SNAPSHOT.jar!/com/company/mailreader/service/ImapServiceBean.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'java.lang.String' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2020-01-28 21:41:25.072 INFO  [main] com.haulmont.cuba.core.sys.CubaThreadPoolTaskScheduler - Shutting down ExecutorService 'scheduler'
+2020-01-28 21:41:25.137 ERROR [main] com.haulmont.cuba.core.sys.AbstractWebAppContextLoader - Error initializing application
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mailreader_ImapService' defined in URL [jar:file:/home/brrr/StudioProjects/mailreader/deploy/tomcat/webapps/app-core/WEB-INF/lib/app-core-0.1-SNAPSHOT.jar!/com/company/mailreader/service/ImapServiceBean.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'java.lang.String' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:769) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:218) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1341) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1187) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:144) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:95) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext.<init>(CubaClassPathXmlApplicationContext.java:27) ~[cuba-global-7.1.3.jar:7.1.3]
+	at com.haulmont.cuba.core.sys.CubaCoreApplicationContext.<init>(CubaCoreApplicationContext.java:26) ~[cuba-core-7.1.3.jar:7.1.3]
+	at com.haulmont.cuba.core.sys.AppContextLoader.createApplicationContext(AppContextLoader.java:94) ~[cuba-core-7.1.3.jar:7.1.3]
+	at com.haulmont.cuba.core.sys.AppContextLoader.createApplicationContext(AppContextLoader.java:39) ~[cuba-core-7.1.3.jar:7.1.3]
+	at com.haulmont.cuba.core.sys.AbstractAppContextLoader.initAppContext(AbstractAppContextLoader.java:62) ~[cuba-global-7.1.3.jar:7.1.3]
+	at com.haulmont.cuba.core.sys.AbstractWebAppContextLoader.contextInitialized(AbstractWebAppContextLoader.java:78) ~[cuba-global-7.1.3.jar:7.1.3]
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4682) [catalina.jar:9.0.19]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5150) [catalina.jar:9.0.19]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.19]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:713) [catalina.jar:9.0.19]
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:690) [catalina.jar:9.0.19]
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:695) [catalina.jar:9.0.19]
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1133) [catalina.jar:9.0.19]
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1867) [catalina.jar:9.0.19]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_231]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_231]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) [tomcat-util.jar:9.0.19]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112) [na:1.8.0_231]
+	at org.apache.catalina.startup.HostConfig.deployDirectories(HostConfig.java:1045) [catalina.jar:9.0.19]
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:429) [catalina.jar:9.0.19]
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1576) [catalina.jar:9.0.19]
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:309) [catalina.jar:9.0.19]
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123) [catalina.jar:9.0.19]
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423) [catalina.jar:9.0.19]
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:366) [catalina.jar:9.0.19]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:929) [catalina.jar:9.0.19]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:831) [catalina.jar:9.0.19]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.19]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1377) [catalina.jar:9.0.19]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1367) [catalina.jar:9.0.19]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_231]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) [tomcat-util.jar:9.0.19]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134) [na:1.8.0_231]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:902) [catalina.jar:9.0.19]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262) [catalina.jar:9.0.19]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.19]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:423) [catalina.jar:9.0.19]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.19]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:932) [catalina.jar:9.0.19]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.19]
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:633) [catalina.jar:9.0.19]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_231]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_231]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_231]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_231]
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:350) [bootstrap.jar:9.0.19]
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:492) [bootstrap.jar:9.0.19]
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'java.lang.String' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1654) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1213) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at com.haulmont.cuba.core.sys.CubaDefaultListableBeanFactory.resolveDependency(CubaDefaultListableBeanFactory.java:59) ~[cuba-global-7.1.3.jar:7.1.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	... 61 common frames omitted
+2020-01-28 21:45:15.317 INFO  [main] com.haulmont.cuba.core.sys.AppComponents - Using app components: [com.haulmont.cuba]
+2020-01-28 21:45:15.540 INFO  [main] com.haulmont.cuba.core.sys.AbstractWebAppContextLoader - Loading app properties from classpath:com/company/mailreader/web-app.properties
+2020-01-28 21:45:15.884 INFO  [main] com.haulmont.cuba.core.sys.environmentcheck.EnvironmentChecksRunner - Environment checks on web module completed successfully
+2020-01-28 21:45:18.587 INFO  [main] com.haulmont.cuba.core.sys.remoting.discovery.StaticServerSelector - Server URLs: [http://localhost:8080/app-core/remoting]
+2020-01-28 21:45:18.615 INFO  [main] com.haulmont.cuba.web.sys.remoting.WebRemoteProxyBeanCreator - Configuring proxy beans for local service invocations: [cuba_ConstraintScriptValidationService, cuba_AuthenticationService, cuba_TrustedClientService, cuba_ServerInfoService, cuba_UserSettingService, cuba_UserManagementService, cuba_DataService, cuba_ConfigStorageService, cuba_PersistenceManagerService, cuba_LockService, cuba_UserSessionService, cuba_FoldersService, cuba_EmailService, cuba_FileStorageService, cuba_EntitySnapshotService, cuba_UniqueNumbersService, cuba_LocalizedMessageService, cuba_ResourceService, cuba_ScheduledTasksService, cuba_EntityLogService, cuba_TestingService, cuba_DomainDescriptionService, cuba_RelatedEntitiesService, cuba_EntitySqlGenerationService, cuba_NumberIdService, cuba_QueryResultsService, cuba_DynamicAttributesCacheService, cuba_EntityRestoreService, cuba_LocalFileExchangeService, cuba_EntityImportExportService, cuba_ConstraintLocalizationService, cuba_AttributeAccessService, cuba_ExceptionReportService, cuba_BulkEditorDataService, cuba_AttributeOptionsLoaderService]
+2020-01-28 21:45:18.617 INFO  [main] com.haulmont.cuba.web.sys.remoting.WebRemoteProxyBeanCreator - Configuring proxy beans for local service invocations: [mailreader_ImapService, mailreader_ReceiveEmailsService]
+2020-01-28 21:45:20.294 INFO  [main] com.haulmont.cuba.core.sys.CubaThreadPoolTaskScheduler - Initializing ExecutorService 'scheduler'
+2020-01-28 21:45:20.646 INFO  [main] com.haulmont.cuba.core.sys.jmx.MBeanExporter - Registering beans for JMX exposure: [app.cuba:type=ConfigStorage, app.cuba:type=CachingFacade, app.cuba:type=FileUploading, app.cuba:type=JmxNodeIdentifier, app.cuba:type=JmxLogControl, app.cuba:type=ClassLoaderManager, app.cuba:type=StatisticsCounter]
+2020-01-28 21:45:20.820 DEBUG [main] com.haulmont.cuba.gui.components.impl.ActionsImpl - Actions initialized in 63 ms
+2020-01-28 21:45:20.825 INFO  [main] com.haulmont.cuba.core.sys.MetadataImpl - Initializing metadata
+2020-01-28 21:45:21.127 INFO  [main] com.haulmont.cuba.core.sys.MetadataImpl - Metadata initialized in 301 ms
+2020-01-28 21:45:21.158 INFO  [main] com.haulmont.cuba.core.sys.AbstractWebAppContextLoader - AppContext started
+2020-01-28 21:45:21.204 INFO  [main] com.haulmont.cuba.web.sys.CubaDispatcherServlet - Initializing Servlet 'dispatcher'
+2020-01-28 21:45:21.731 DEBUG [main] org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider
+2020-01-28 21:45:22.656 INFO  [main] com.haulmont.cuba.web.sys.CubaDispatcherServlet - Completed initialization in 1452 ms
+2020-01-28 21:45:22.757 INFO  [main] com.haulmont.cuba.core.sys.AppComponents - Using app components: [com.haulmont.cuba]
+2020-01-28 21:45:22.771 INFO  [main] com.haulmont.cuba.core.sys.AbstractWebAppContextLoader - Loading app properties from classpath:com/company/mailreader/app.properties
+2020-01-28 21:45:22.777 INFO  [main] com.haulmont.cuba.core.sys.AppContextLoader - DbmsType of the main database is set to hsql
+2020-01-28 21:45:22.798 INFO  [main] com.haulmont.cuba.core.sys.environmentcheck.DataStoresCheck - Checking connection to data store _MAIN_
+2020-01-28 21:45:23.279 INFO  [main] com.haulmont.cuba.core.sys.environmentcheck.EnvironmentChecksRunner - Environment checks on core module completed successfully
+2020-01-28 21:45:23.341 INFO  [main] com.haulmont.cuba.core.sys.persistence.PersistenceConfigProcessor - Creating file /home/brrr/StudioProjects/mailreader/deploy/tomcat/work/app-core/persistence.xml
+2020-01-28 21:45:38.538 INFO  [main] com.haulmont.cuba.core.sys.AppComponents - Using app components: [com.haulmont.cuba]
+2020-01-28 21:45:38.642 INFO  [main] com.haulmont.cuba.core.sys.AbstractWebAppContextLoader - Loading app properties from classpath:com/company/mailreader/web-app.properties
+2020-01-28 21:45:38.748 INFO  [main] com.haulmont.cuba.core.sys.environmentcheck.EnvironmentChecksRunner - Environment checks on web module completed successfully
+2020-01-28 21:45:41.020 INFO  [main] com.haulmont.cuba.core.sys.remoting.discovery.StaticServerSelector - Server URLs: [http://localhost:8080/app-core/remoting]
+2020-01-28 21:45:41.040 INFO  [main] com.haulmont.cuba.web.sys.remoting.WebRemoteProxyBeanCreator - Configuring proxy beans for local service invocations: [cuba_ConstraintScriptValidationService, cuba_AuthenticationService, cuba_TrustedClientService, cuba_ServerInfoService, cuba_UserSettingService, cuba_UserManagementService, cuba_DataService, cuba_ConfigStorageService, cuba_PersistenceManagerService, cuba_LockService, cuba_UserSessionService, cuba_FoldersService, cuba_EmailService, cuba_FileStorageService, cuba_EntitySnapshotService, cuba_UniqueNumbersService, cuba_LocalizedMessageService, cuba_ResourceService, cuba_ScheduledTasksService, cuba_EntityLogService, cuba_TestingService, cuba_DomainDescriptionService, cuba_RelatedEntitiesService, cuba_EntitySqlGenerationService, cuba_NumberIdService, cuba_QueryResultsService, cuba_DynamicAttributesCacheService, cuba_EntityRestoreService, cuba_LocalFileExchangeService, cuba_EntityImportExportService, cuba_ConstraintLocalizationService, cuba_AttributeAccessService, cuba_ExceptionReportService, cuba_BulkEditorDataService, cuba_AttributeOptionsLoaderService]
+2020-01-28 21:45:41.042 INFO  [main] com.haulmont.cuba.web.sys.remoting.WebRemoteProxyBeanCreator - Configuring proxy beans for local service invocations: [mailreader_ImapService, mailreader_ReceiveEmailsService]
+2020-01-28 21:45:42.431 INFO  [main] com.haulmont.cuba.core.sys.CubaThreadPoolTaskScheduler - Initializing ExecutorService 'scheduler'
+2020-01-28 21:45:42.707 INFO  [main] com.haulmont.cuba.core.sys.jmx.MBeanExporter - Registering beans for JMX exposure: [app.cuba:type=ConfigStorage, app.cuba:type=CachingFacade, app.cuba:type=FileUploading, app.cuba:type=JmxNodeIdentifier, app.cuba:type=JmxLogControl, app.cuba:type=ClassLoaderManager, app.cuba:type=StatisticsCounter]
+2020-01-28 21:45:42.837 DEBUG [main] com.haulmont.cuba.gui.components.impl.ActionsImpl - Actions initialized in 31 ms
+2020-01-28 21:45:42.842 INFO  [main] com.haulmont.cuba.core.sys.MetadataImpl - Initializing metadata
+2020-01-28 21:45:43.091 INFO  [main] com.haulmont.cuba.core.sys.MetadataImpl - Metadata initialized in 248 ms
+2020-01-28 21:45:43.124 INFO  [main] com.haulmont.cuba.core.sys.AbstractWebAppContextLoader - AppContext started
+2020-01-28 21:45:43.150 INFO  [main] com.haulmont.cuba.web.sys.CubaDispatcherServlet - Initializing Servlet 'dispatcher'
+2020-01-28 21:45:43.586 DEBUG [main] org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider
+2020-01-28 21:45:44.225 INFO  [main] com.haulmont.cuba.web.sys.CubaDispatcherServlet - Completed initialization in 1074 ms
+2020-01-28 21:45:44.302 INFO  [main] com.haulmont.cuba.core.sys.AppComponents - Using app components: [com.haulmont.cuba]
+2020-01-28 21:45:44.309 INFO  [main] com.haulmont.cuba.core.sys.AbstractWebAppContextLoader - Loading app properties from classpath:com/company/mailreader/app.properties
+2020-01-28 21:45:44.315 INFO  [main] com.haulmont.cuba.core.sys.AppContextLoader - DbmsType of the main database is set to hsql
+2020-01-28 21:45:44.324 INFO  [main] com.haulmont.cuba.core.sys.environmentcheck.DataStoresCheck - Checking connection to data store _MAIN_
+2020-01-28 21:45:44.654 INFO  [main] com.haulmont.cuba.core.sys.environmentcheck.EnvironmentChecksRunner - Environment checks on core module completed successfully
+2020-01-28 21:45:44.719 INFO  [main] com.haulmont.cuba.core.sys.persistence.PersistenceConfigProcessor - Creating file /home/brrr/StudioProjects/mailreader/deploy/tomcat/work/app-core/persistence.xml
+2020-01-28 21:45:49.203 INFO  [main] com.haulmont.cuba.core.sys.CubaThreadPoolTaskScheduler - Initializing ExecutorService 'scheduler'
+2020-01-28 21:45:49.299 WARN  [main] com.haulmont.cuba.core.sys.CubaCoreApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mailreader_ReceiveEmailsService': Unsatisfied dependency expressed through field 'entityManager'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'cuba_EntityManager' defined in URL [jar:file:/home/brrr/StudioProjects/mailreader/deploy/tomcat/webapps/app-core/WEB-INF/lib/cuba-core-7.1.3.jar!/com/haulmont/cuba/core/sys/EntityManagerImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'javax.persistence.EntityManager' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2020-01-28 21:45:49.300 INFO  [main] com.haulmont.cuba.core.sys.CubaThreadPoolTaskScheduler - Shutting down ExecutorService 'scheduler'
+2020-01-28 21:45:49.340 ERROR [main] com.haulmont.cuba.core.sys.AbstractWebAppContextLoader - Error initializing application
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mailreader_ReceiveEmailsService': Unsatisfied dependency expressed through field 'entityManager'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'cuba_EntityManager' defined in URL [jar:file:/home/brrr/StudioProjects/mailreader/deploy/tomcat/webapps/app-core/WEB-INF/lib/cuba-core-7.1.3.jar!/com/haulmont/cuba/core/sys/EntityManagerImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'javax.persistence.EntityManager' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:144) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:95) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext.<init>(CubaClassPathXmlApplicationContext.java:27) ~[cuba-global-7.1.3.jar:7.1.3]
+	at com.haulmont.cuba.core.sys.CubaCoreApplicationContext.<init>(CubaCoreApplicationContext.java:26) ~[cuba-core-7.1.3.jar:7.1.3]
+	at com.haulmont.cuba.core.sys.AppContextLoader.createApplicationContext(AppContextLoader.java:94) ~[cuba-core-7.1.3.jar:7.1.3]
+	at com.haulmont.cuba.core.sys.AppContextLoader.createApplicationContext(AppContextLoader.java:39) ~[cuba-core-7.1.3.jar:7.1.3]
+	at com.haulmont.cuba.core.sys.AbstractAppContextLoader.initAppContext(AbstractAppContextLoader.java:62) ~[cuba-global-7.1.3.jar:7.1.3]
+	at com.haulmont.cuba.core.sys.AbstractWebAppContextLoader.contextInitialized(AbstractWebAppContextLoader.java:78) ~[cuba-global-7.1.3.jar:7.1.3]
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4682) [catalina.jar:9.0.19]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5150) [catalina.jar:9.0.19]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.19]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:713) [catalina.jar:9.0.19]
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:690) [catalina.jar:9.0.19]
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:695) [catalina.jar:9.0.19]
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1133) [catalina.jar:9.0.19]
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1867) [catalina.jar:9.0.19]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_231]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_231]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) [tomcat-util.jar:9.0.19]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112) [na:1.8.0_231]
+	at org.apache.catalina.startup.HostConfig.deployDirectories(HostConfig.java:1045) [catalina.jar:9.0.19]
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:429) [catalina.jar:9.0.19]
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1576) [catalina.jar:9.0.19]
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:309) [catalina.jar:9.0.19]
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123) [catalina.jar:9.0.19]
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423) [catalina.jar:9.0.19]
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:366) [catalina.jar:9.0.19]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:929) [catalina.jar:9.0.19]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:831) [catalina.jar:9.0.19]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.19]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1377) [catalina.jar:9.0.19]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1367) [catalina.jar:9.0.19]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_231]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) [tomcat-util.jar:9.0.19]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134) [na:1.8.0_231]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:902) [catalina.jar:9.0.19]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262) [catalina.jar:9.0.19]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.19]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:423) [catalina.jar:9.0.19]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.19]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:932) [catalina.jar:9.0.19]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.19]
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:633) [catalina.jar:9.0.19]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_231]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_231]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_231]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_231]
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:350) [bootstrap.jar:9.0.19]
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:492) [bootstrap.jar:9.0.19]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'cuba_EntityManager' defined in URL [jar:file:/home/brrr/StudioProjects/mailreader/deploy/tomcat/webapps/app-core/WEB-INF/lib/cuba-core-7.1.3.jar!/com/haulmont/cuba/core/sys/EntityManagerImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'javax.persistence.EntityManager' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:769) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:218) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1341) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1187) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:338) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1247) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at com.haulmont.cuba.core.sys.CubaDefaultListableBeanFactory.resolveDependency(CubaDefaultListableBeanFactory.java:59) ~[cuba-global-7.1.3.jar:7.1.3]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	... 61 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'javax.persistence.EntityManager' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1654) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1213) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at com.haulmont.cuba.core.sys.CubaDefaultListableBeanFactory.resolveDependency(CubaDefaultListableBeanFactory.java:59) ~[cuba-global-7.1.3.jar:7.1.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	... 73 common frames omitted
+2020-01-28 21:55:55.414 INFO  [main] com.haulmont.cuba.core.sys.AppComponents - Using app components: [com.haulmont.cuba]
+2020-01-28 21:55:55.691 INFO  [main] com.haulmont.cuba.core.sys.AbstractWebAppContextLoader - Loading app properties from classpath:com/company/mailreader/web-app.properties
+2020-01-28 21:55:56.144 INFO  [main] com.haulmont.cuba.core.sys.environmentcheck.EnvironmentChecksRunner - Environment checks on web module completed successfully
+2020-01-28 21:55:59.381 INFO  [main] com.haulmont.cuba.core.sys.remoting.discovery.StaticServerSelector - Server URLs: [http://localhost:8080/app-core/remoting]
+2020-01-28 21:55:59.419 INFO  [main] com.haulmont.cuba.web.sys.remoting.WebRemoteProxyBeanCreator - Configuring proxy beans for local service invocations: [cuba_ConstraintScriptValidationService, cuba_AuthenticationService, cuba_TrustedClientService, cuba_ServerInfoService, cuba_UserSettingService, cuba_UserManagementService, cuba_DataService, cuba_ConfigStorageService, cuba_PersistenceManagerService, cuba_LockService, cuba_UserSessionService, cuba_FoldersService, cuba_EmailService, cuba_FileStorageService, cuba_EntitySnapshotService, cuba_UniqueNumbersService, cuba_LocalizedMessageService, cuba_ResourceService, cuba_ScheduledTasksService, cuba_EntityLogService, cuba_TestingService, cuba_DomainDescriptionService, cuba_RelatedEntitiesService, cuba_EntitySqlGenerationService, cuba_NumberIdService, cuba_QueryResultsService, cuba_DynamicAttributesCacheService, cuba_EntityRestoreService, cuba_LocalFileExchangeService, cuba_EntityImportExportService, cuba_ConstraintLocalizationService, cuba_AttributeAccessService, cuba_ExceptionReportService, cuba_BulkEditorDataService, cuba_AttributeOptionsLoaderService]
+2020-01-28 21:55:59.420 INFO  [main] com.haulmont.cuba.web.sys.remoting.WebRemoteProxyBeanCreator - Configuring proxy beans for local service invocations: [mailreader_ImapService, mailreader_ReceiveEmailsService]
+2020-01-28 21:56:01.356 INFO  [main] com.haulmont.cuba.core.sys.CubaThreadPoolTaskScheduler - Initializing ExecutorService 'scheduler'
+2020-01-28 21:56:01.744 INFO  [main] com.haulmont.cuba.core.sys.jmx.MBeanExporter - Registering beans for JMX exposure: [app.cuba:type=ConfigStorage, app.cuba:type=CachingFacade, app.cuba:type=FileUploading, app.cuba:type=JmxNodeIdentifier, app.cuba:type=JmxLogControl, app.cuba:type=ClassLoaderManager, app.cuba:type=StatisticsCounter]
+2020-01-28 21:56:01.952 DEBUG [main] com.haulmont.cuba.gui.components.impl.ActionsImpl - Actions initialized in 71 ms
+2020-01-28 21:56:01.976 INFO  [main] com.haulmont.cuba.core.sys.MetadataImpl - Initializing metadata
+2020-01-28 21:56:02.302 INFO  [main] com.haulmont.cuba.core.sys.MetadataImpl - Metadata initialized in 326 ms
+2020-01-28 21:56:02.330 INFO  [main] com.haulmont.cuba.core.sys.AbstractWebAppContextLoader - AppContext started
+2020-01-28 21:56:02.431 INFO  [main] com.haulmont.cuba.web.sys.CubaDispatcherServlet - Initializing Servlet 'dispatcher'
+2020-01-28 21:56:03.237 DEBUG [main] org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider
+2020-01-28 21:56:04.506 INFO  [main] com.haulmont.cuba.web.sys.CubaDispatcherServlet - Completed initialization in 2074 ms
+2020-01-28 21:56:05.080 INFO  [main] com.haulmont.cuba.core.sys.AppComponents - Using app components: [com.haulmont.cuba]
+2020-01-28 21:56:05.114 INFO  [main] com.haulmont.cuba.core.sys.AbstractWebAppContextLoader - Loading app properties from classpath:com/company/mailreader/app.properties
+2020-01-28 21:56:05.126 INFO  [main] com.haulmont.cuba.core.sys.AppContextLoader - DbmsType of the main database is set to hsql
+2020-01-28 21:56:05.159 INFO  [main] com.haulmont.cuba.core.sys.environmentcheck.DataStoresCheck - Checking connection to data store _MAIN_
+2020-01-28 21:56:05.831 INFO  [main] com.haulmont.cuba.core.sys.environmentcheck.EnvironmentChecksRunner - Environment checks on core module completed successfully
+2020-01-28 21:56:05.971 INFO  [main] com.haulmont.cuba.core.sys.persistence.PersistenceConfigProcessor - Creating file /home/brrr/StudioProjects/mailreader/deploy/tomcat/work/app-core/persistence.xml
+2020-01-28 21:56:11.870 INFO  [main] com.haulmont.cuba.core.sys.CubaThreadPoolTaskScheduler - Initializing ExecutorService 'scheduler'
+2020-01-28 21:56:12.255 INFO  [main] com.haulmont.cuba.core.sys.jmx.MBeanExporter - Registering beans for JMX exposure: [app-core.cuba:type=PersistenceManager, app-core.cuba:type=ConfigStorage, app-core.cuba:type=UserSessions, app-core.cuba:type=UniqueNumbers, app-core.cuba:type=Emailer, app-core.cuba:type=EntityLog, app-core.cuba:type=FileStorage, app-core.cuba:type=LockManager, app-core.cuba:type=CachingFacade, app-core.cuba:type=ClusterManager, app-core.cuba:type=ScriptingManager, app-core.cuba:type=ServerInfo, app-core.cuba:type=Scheduling, app-core.cuba:type=PasswordEncryptionSupport, app-core.cuba:type=JmxNodeIdentifier, app-core.cuba:type=JmxLogControl, app-core.cuba:type=ClassLoaderManager, app-core.cuba:type=StatisticsCounter, app-core.cuba:type=BruteForceProtection, app-core.cuba:type=QueryCacheSupport]
+2020-01-28 21:56:12.451 INFO  [main] com.haulmont.cuba.core.sys.MetadataImpl - Initializing metadata
+2020-01-28 21:56:12.611 INFO  [main] com.haulmont.cuba.core.sys.MetadataImpl - Metadata initialized in 160 ms
+2020-01-28 21:56:12.921 DEBUG [main] com.haulmont.cuba.security.auth.AnonymousSessionHolder - Initialize anonymous session
+2020-01-28 21:56:13.797 INFO  [main/app-core/server] com.haulmont.cuba.core.app.ConfigStorage - Loading DB-stored app properties cache
+2020-01-28 21:56:14.315 INFO  [main/app-core/server] com.haulmont.cuba.core.sys.DefaultPermissionValuesConfig - Initializing default permission values
+2020-01-28 21:56:14.408 INFO  [main/app-core/server] com.haulmont.cuba.security.auth.AuthenticationManagerBean - Logged in: d6916d55-fa61-3e0f-9257-f66c67882e8e [anonymous]
+2020-01-28 21:56:14.409 DEBUG [main] com.haulmont.cuba.security.auth.AnonymousSessionHolder - Anonymous session initialized with id d6916d55-fa61-3e0f-9257-f66c67882e8e
+2020-01-28 21:56:14.410 INFO  [main] com.haulmont.cuba.core.sys.AbstractWebAppContextLoader - AppContext started
+2020-01-28 21:56:14.412 INFO  [main] com.haulmont.cuba.core.sys.remoting.RemotingServlet - Initializing Servlet 'remoting'
+2020-01-28 21:56:14.435 INFO  [main] com.haulmont.cuba.core.sys.remoting.RemoteServicesBeanCreator - Configuring remote services
+2020-01-28 21:56:14.448 DEBUG [cuba_core_scheduler-5] com.haulmont.cuba.core.app.queryresults.QueryResultsManager - Delete query results for inactive user sessions
+2020-01-28 21:56:14.644 INFO  [main] com.haulmont.cuba.core.sys.remoting.RemotingServlet - Completed initialization in 232 ms
+2020-01-28 21:57:44.727 WARN  [http-nio-8080-exec-41] com.vaadin.server.DefaultDeploymentConfiguration - 
+=================================================================
+Vaadin is running in DEBUG MODE.
+Add productionMode=true to web.xml to disable debug features.
+To show debug window, add ?debug to your application URL.
+=================================================================
+2020-01-28 21:57:49.274 DEBUG [http-nio-8080-exec-17] com.haulmont.cuba.web.App - Initializing application
+2020-01-28 21:57:49.343 DEBUG [http-nio-8080-exec-17] com.haulmont.cuba.gui.theme.ThemeConstantsRepository - Loading theme constants
+2020-01-28 21:57:49.486 DEBUG [http-nio-8080-exec-17] com.haulmont.cuba.web.security.WebAnonymousSessionHolder - Loading anonymous session
+2020-01-28 21:57:50.487 DEBUG [http-nio-8080-exec-17] com.haulmont.cuba.web.security.WebAnonymousSessionHolder - Anonymous session loaded with id d6916d55-fa61-3e0f-9257-f66c67882e8e
+2020-01-28 21:57:50.515 DEBUG [http-nio-8080-exec-17/app/anonymous] com.haulmont.cuba.web.DefaultApp - connectionStateChanged connected: true, authenticated: false
+2020-01-28 21:57:50.517 DEBUG [http-nio-8080-exec-17/app/anonymous] com.haulmont.cuba.web.App - Closing all windows in all UIs
+2020-01-28 21:57:50.608 INFO  [http-nio-8080-exec-17/app/anonymous] com.haulmont.cuba.gui.config.WindowConfig - WindowConfig initialized in 60 ms
+2020-01-28 21:57:55.271 INFO  [http-nio-8080-exec-43/app-core/server] com.haulmont.cuba.security.auth.AuthenticationManagerBean - Logged in: 0a487f55-4312-fba7-4a45-c2fc61219a06 [admin]
+2020-01-28 21:57:55.289 DEBUG [http-nio-8080-exec-43/app/admin] com.haulmont.cuba.web.DefaultApp - connectionStateChanged connected: true, authenticated: true
+2020-01-28 21:57:55.289 DEBUG [http-nio-8080-exec-43/app/admin] com.haulmont.cuba.web.App - Closing all windows in all UIs
+2020-01-28 21:57:55.300 DEBUG [http-nio-8080-exec-43/app/admin] com.haulmont.cuba.web.DefaultApp - Session reinitialized: HttpSession=org.apache.catalina.session.StandardSessionFacade@22358f8b, timeout=1800sec, UserSession=0a487f55-4312-fba7-4a45-c2fc61219a06 [admin]
+2020-01-28 21:57:55.626 INFO  [http-nio-8080-exec-43/app-core/admin] com.haulmont.cuba.core.sys.AbstractViewRepository - Initializing views
+2020-01-28 21:57:55.680 DEBUG [http-nio-8080-exec-43/app-core/admin] com.haulmont.cuba.core.app.StoreFactory - No implementation is specified for _MAIN_ store, using RdbmsStore
+2020-01-28 21:57:55.723 DEBUG [http-nio-8080-exec-43/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - loadList: metaClass=sec$UserSubstitution, view=com.haulmont.cuba.security.entity.UserSubstitution/app, query=Query{queryString='select us from sec$UserSubstitution us where us.user.id = :userId and (us.endDate is null or us.endDate >= :currentDate) and (us.startDate is null or us.startDate <= :currentDate) and (us.substitutedUser.active = true or us.substitutedUser.active is null) order by us.substitutedUser.name', condition=null, sort=null, firstResult=0, maxResults=0}
+2020-01-28 21:58:03.531 INFO  [http-nio-8080-exec-29/app/admin] com.haulmont.cuba.core.sys.AbstractViewRepository - Initializing views
+2020-01-28 21:58:03.605 INFO  [http-nio-8080-exec-29/app-core/admin] com.haulmont.cuba.core.app.PersistenceManager - Loading statistics cache
+2020-01-28 21:58:04.020 DEBUG [http-nio-8080-exec-29/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - loadList: metaClass=sec$Filter, view=com.haulmont.cuba.security.entity.FilterEntity/app, query=Query{queryString='select f from sec$Filter f left join f.user u where f.componentId = :component and (u.id = :userId or u is null) order by f.name', condition=null, sort=null, firstResult=0, maxResults=0}
+2020-01-28 21:58:04.246 DEBUG [http-nio-8080-exec-29/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - loadList: metaClass=sec$Presentation, view=com.haulmont.cuba.security.entity.Presentation/app, query=Query{queryString='select p from sec$Presentation p where p.componentId = :component and (p.user is null or p.user.id = :userId)', condition=null, sort=null, firstResult=0, maxResults=0}
+2020-01-28 21:58:04.855 DEBUG [http-nio-8080-exec-29/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - loadList: metaClass=sys$ScheduledTask, view=com.haulmont.cuba.core.entity.ScheduledTask/_local, query=Query{queryString=' select t from sys$ScheduledTask t order by t.beanName, t.methodName ', condition=null, sort=null, firstResult=0, maxResults=50}, max=50
+2020-01-28 21:58:12.379 INFO  [ClientCacheManager-pool-2-thread-1/app-core/server] com.haulmont.cuba.security.auth.AuthenticationManagerBean - Logged in: acad89be-5403-c7d6-5da3-8c8c7cf5a707 [admin]
+2020-01-28 21:58:27.866 DEBUG [http-nio-8080-exec-32/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - loadList: metaClass=sec$Filter, view=com.haulmont.cuba.security.entity.FilterEntity/app, query=Query{queryString='select f from sec$Filter f left join f.user u where f.componentId = :component and (u.id = :userId or u is null) order by f.name', condition=null, sort=null, firstResult=0, maxResults=0}
+2020-01-28 21:58:27.925 DEBUG [http-nio-8080-exec-32/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - loadList: metaClass=sec$User, view=com.haulmont.cuba.security.entity.User/user.browse, query=Query{queryString=' select u from sec$User u ', condition=null, sort=null, firstResult=0, maxResults=50}, max=50
+2020-01-28 21:58:32.632 DEBUG [http-nio-8080-exec-43/app-core/admin] com.haulmont.cuba.security.app.EntityLog - Loading entities
+2020-01-28 21:58:32.648 DEBUG [http-nio-8080-exec-43/app-core/admin] com.haulmont.cuba.security.app.EntityLog - Loaded: entitiesAuto=0, entitiesManual=0
+2020-01-28 21:58:57.091 DEBUG [http-nio-8080-exec-9/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - commit: commitInstances=[ScheduledTask{4d6a1cc0-8396-8517-6ae4-7c598776fbc5, beanName=mailreader_ReceiveEmailsService, methodName=receive, period=100}], removeInstances=[]
+2020-01-28 21:58:57.095 DEBUG [http-nio-8080-exec-9/app-core/admin] com.haulmont.cuba.core.app.SavedEntitiesHolder - Created SavedEntitiesHolder@4b7a23a4
+2020-01-28 21:58:57.095 DEBUG [http-nio-8080-exec-9/app-core/admin] com.haulmont.cuba.core.app.SavedEntitiesHolder - SavedEntitiesHolder@4b7a23a4 updates entities: [ScheduledTask{4d6a1cc0-8396-8517-6ae4-7c598776fbc5, beanName=mailreader_ReceiveEmailsService, methodName=receive, period=100}]
+2020-01-28 21:58:57.118 DEBUG [http-nio-8080-exec-9/app-core/admin] com.haulmont.cuba.core.app.SavedEntitiesHolder - Released SavedEntitiesHolder@4b7a23a4
+2020-01-28 21:59:01.263 DEBUG [http-nio-8080-exec-11/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - loadList: metaClass=sys$ScheduledTask, view=com.haulmont.cuba.core.entity.ScheduledTask/_local, query=Query{queryString=' select t from sys$ScheduledTask t order by t.beanName, t.methodName ', condition=null, sort=null, firstResult=0, maxResults=50}, max=50
+2020-01-28 21:59:09.814 DEBUG [http-nio-8080-exec-19/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - loadList: metaClass=sys$ScheduledExecution, view=com.haulmont.cuba.core.entity.ScheduledExecution/_local, query=Query{queryString=' select e from sys$ScheduledExecution e where e.task.id = :param_task_id order by e.startTime desc ', condition=null, sort=null, firstResult=0, maxResults=50}, max=50
+2020-01-28 21:59:12.101 DEBUG [http-nio-8080-exec-39/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - loadList: metaClass=sys$ScheduledExecution, view=com.haulmont.cuba.core.entity.ScheduledExecution/_local, query=Query{queryString=' select e from sys$ScheduledExecution e where e.task.id = :param_task_id order by e.startTime desc ', condition=null, sort=null, firstResult=0, maxResults=50}, max=50
+2020-01-28 21:59:13.020 DEBUG [http-nio-8080-exec-6/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - loadList: metaClass=sys$ScheduledExecution, view=com.haulmont.cuba.core.entity.ScheduledExecution/_local, query=Query{queryString=' select e from sys$ScheduledExecution e where e.task.id = :param_task_id order by e.startTime desc ', condition=null, sort=null, firstResult=0, maxResults=50}, max=50
+2020-01-28 21:59:18.516 DEBUG [http-nio-8080-exec-46/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - loadList: metaClass=sec$Filter, view=com.haulmont.cuba.security.entity.FilterEntity/app, query=Query{queryString='select f from sec$Filter f left join f.user u where f.componentId = :component and (u.id = :userId or u is null) order by f.name', condition=null, sort=null, firstResult=0, maxResults=0}
+2020-01-28 21:59:18.557 DEBUG [http-nio-8080-exec-46/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - loadList: metaClass=sys$SendingMessage, view=com.haulmont.cuba.core.entity.SendingMessage/sendingMessage.browse, query=Query{queryString=' select sm from sys$SendingMessage sm ', condition=null, sort=null, firstResult=0, maxResults=50}, max=50
+2020-01-28 21:59:41.119 DEBUG [http-nio-8080-exec-25/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - loadList: metaClass=sec$Filter, view=com.haulmont.cuba.security.entity.FilterEntity/app, query=Query{queryString='select f from sec$Filter f left join f.user u where f.componentId = :component and (u.id = :userId or u is null) order by f.name', condition=null, sort=null, firstResult=0, maxResults=0}
+2020-01-28 21:59:41.149 DEBUG [http-nio-8080-exec-25/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - loadList: metaClass=mailreader_Tracker, view=com.company.mailreader.entity.Tracker/, query=Query{queryString='select e from mailreader_Tracker e', condition=null, sort=null, firstResult=0, maxResults=50}, max=50
+2020-01-28 21:59:44.386 DEBUG [http-nio-8080-exec-36/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - loadList: metaClass=mailreader_Tracker, view=com.company.mailreader.entity.Tracker/, query=Query{queryString='select e from mailreader_Tracker e', condition=null, sort=null, firstResult=0, maxResults=50}, max=50
+2020-01-28 22:00:14.340 DEBUG [http-nio-8080-exec-22/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - loadList: metaClass=mailreader_Tracker, view=com.company.mailreader.entity.Tracker/, query=Query{queryString='select e from mailreader_Tracker e', condition=null, sort=null, firstResult=0, maxResults=50}, max=50
+2020-01-28 22:03:16.460 INFO  [main] com.haulmont.cuba.core.sys.AppComponents - Using app components: [com.haulmont.cuba]
+2020-01-28 22:03:17.195 INFO  [main] com.haulmont.cuba.core.sys.AbstractWebAppContextLoader - Loading app properties from classpath:com/company/mailreader/web-app.properties
+2020-01-28 22:03:18.690 INFO  [main] com.haulmont.cuba.core.sys.environmentcheck.EnvironmentChecksRunner - Environment checks on web module completed successfully
+2020-01-28 22:03:24.713 INFO  [main] com.haulmont.cuba.core.sys.remoting.discovery.StaticServerSelector - Server URLs: [http://localhost:8080/app-core/remoting]
+2020-01-28 22:03:24.796 INFO  [main] com.haulmont.cuba.web.sys.remoting.WebRemoteProxyBeanCreator - Configuring proxy beans for local service invocations: [cuba_ConstraintScriptValidationService, cuba_AuthenticationService, cuba_TrustedClientService, cuba_ServerInfoService, cuba_UserSettingService, cuba_UserManagementService, cuba_DataService, cuba_ConfigStorageService, cuba_PersistenceManagerService, cuba_LockService, cuba_UserSessionService, cuba_FoldersService, cuba_EmailService, cuba_FileStorageService, cuba_EntitySnapshotService, cuba_UniqueNumbersService, cuba_LocalizedMessageService, cuba_ResourceService, cuba_ScheduledTasksService, cuba_EntityLogService, cuba_TestingService, cuba_DomainDescriptionService, cuba_RelatedEntitiesService, cuba_EntitySqlGenerationService, cuba_NumberIdService, cuba_QueryResultsService, cuba_DynamicAttributesCacheService, cuba_EntityRestoreService, cuba_LocalFileExchangeService, cuba_EntityImportExportService, cuba_ConstraintLocalizationService, cuba_AttributeAccessService, cuba_ExceptionReportService, cuba_BulkEditorDataService, cuba_AttributeOptionsLoaderService]
+2020-01-28 22:03:24.798 INFO  [main] com.haulmont.cuba.web.sys.remoting.WebRemoteProxyBeanCreator - Configuring proxy beans for local service invocations: [mailreader_ImapService, mailreader_ReceiveEmailsService]
+2020-01-28 22:03:28.740 INFO  [main] com.haulmont.cuba.core.sys.CubaThreadPoolTaskScheduler - Initializing ExecutorService 'scheduler'
+2020-01-28 22:03:29.736 INFO  [main] com.haulmont.cuba.core.sys.jmx.MBeanExporter - Registering beans for JMX exposure: [app.cuba:type=ConfigStorage, app.cuba:type=CachingFacade, app.cuba:type=FileUploading, app.cuba:type=JmxNodeIdentifier, app.cuba:type=JmxLogControl, app.cuba:type=ClassLoaderManager, app.cuba:type=StatisticsCounter]
+2020-01-28 22:03:29.942 DEBUG [main] com.haulmont.cuba.gui.components.impl.ActionsImpl - Actions initialized in 91 ms
+2020-01-28 22:03:29.969 INFO  [main] com.haulmont.cuba.core.sys.MetadataImpl - Initializing metadata
+2020-01-28 22:03:30.693 INFO  [main] com.haulmont.cuba.core.sys.MetadataImpl - Metadata initialized in 724 ms
+2020-01-28 22:03:30.725 INFO  [main] com.haulmont.cuba.core.sys.AbstractWebAppContextLoader - AppContext started
+2020-01-28 22:03:31.047 INFO  [main] com.haulmont.cuba.web.sys.CubaDispatcherServlet - Initializing Servlet 'dispatcher'
+2020-01-28 22:03:32.437 DEBUG [main] org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider
+2020-01-28 22:03:34.284 INFO  [main] com.haulmont.cuba.web.sys.CubaDispatcherServlet - Completed initialization in 3237 ms
+2020-01-28 22:03:34.607 INFO  [main] com.haulmont.cuba.core.sys.AppComponents - Using app components: [com.haulmont.cuba]
+2020-01-28 22:03:34.626 INFO  [main] com.haulmont.cuba.core.sys.AbstractWebAppContextLoader - Loading app properties from classpath:com/company/mailreader/app.properties
+2020-01-28 22:03:34.653 INFO  [main] com.haulmont.cuba.core.sys.AppContextLoader - DbmsType of the main database is set to hsql
+2020-01-28 22:03:34.675 INFO  [main] com.haulmont.cuba.core.sys.environmentcheck.DataStoresCheck - Checking connection to data store _MAIN_
+2020-01-28 22:03:36.038 INFO  [main] com.haulmont.cuba.core.sys.environmentcheck.EnvironmentChecksRunner - Environment checks on core module completed successfully
+2020-01-28 22:03:36.714 INFO  [main] com.haulmont.cuba.core.sys.persistence.PersistenceConfigProcessor - Creating file /home/brrr/StudioProjects/mailreader/deploy/tomcat/work/app-core/persistence.xml
+2020-01-28 22:03:45.579 INFO  [main] com.haulmont.cuba.core.sys.CubaThreadPoolTaskScheduler - Initializing ExecutorService 'scheduler'
+2020-01-28 22:03:45.961 INFO  [main] com.haulmont.cuba.core.sys.jmx.MBeanExporter - Registering beans for JMX exposure: [app-core.cuba:type=PersistenceManager, app-core.cuba:type=ConfigStorage, app-core.cuba:type=UserSessions, app-core.cuba:type=UniqueNumbers, app-core.cuba:type=Emailer, app-core.cuba:type=EntityLog, app-core.cuba:type=FileStorage, app-core.cuba:type=LockManager, app-core.cuba:type=CachingFacade, app-core.cuba:type=ClusterManager, app-core.cuba:type=ScriptingManager, app-core.cuba:type=ServerInfo, app-core.cuba:type=Scheduling, app-core.cuba:type=PasswordEncryptionSupport, app-core.cuba:type=JmxNodeIdentifier, app-core.cuba:type=JmxLogControl, app-core.cuba:type=ClassLoaderManager, app-core.cuba:type=StatisticsCounter, app-core.cuba:type=BruteForceProtection, app-core.cuba:type=QueryCacheSupport]
+2020-01-28 22:03:46.171 INFO  [main] com.haulmont.cuba.core.sys.MetadataImpl - Initializing metadata
+2020-01-28 22:03:46.336 INFO  [main] com.haulmont.cuba.core.sys.MetadataImpl - Metadata initialized in 164 ms
+2020-01-28 22:03:46.508 DEBUG [main] com.haulmont.cuba.security.auth.AnonymousSessionHolder - Initialize anonymous session
+2020-01-28 22:03:48.143 INFO  [main/app-core/server] com.haulmont.cuba.core.app.ConfigStorage - Loading DB-stored app properties cache
+2020-01-28 22:03:48.741 INFO  [main/app-core/server] com.haulmont.cuba.core.sys.DefaultPermissionValuesConfig - Initializing default permission values
+2020-01-28 22:03:48.936 INFO  [main/app-core/server] com.haulmont.cuba.security.auth.AuthenticationManagerBean - Logged in: d6916d55-fa61-3e0f-9257-f66c67882e8e [anonymous]
+2020-01-28 22:03:48.937 DEBUG [main] com.haulmont.cuba.security.auth.AnonymousSessionHolder - Anonymous session initialized with id d6916d55-fa61-3e0f-9257-f66c67882e8e
+2020-01-28 22:03:48.938 INFO  [main] com.haulmont.cuba.core.sys.AbstractWebAppContextLoader - AppContext started
+2020-01-28 22:03:48.941 INFO  [main] com.haulmont.cuba.core.sys.remoting.RemotingServlet - Initializing Servlet 'remoting'
+2020-01-28 22:03:48.975 INFO  [main] com.haulmont.cuba.core.sys.remoting.RemoteServicesBeanCreator - Configuring remote services
+2020-01-28 22:03:48.983 DEBUG [cuba_core_scheduler-6] com.haulmont.cuba.core.app.queryresults.QueryResultsManager - Delete query results for inactive user sessions
+2020-01-28 22:03:49.205 INFO  [main] com.haulmont.cuba.core.sys.remoting.RemotingServlet - Completed initialization in 263 ms
+2020-01-28 22:03:49.727 WARN  [http-nio-8080-exec-6] com.vaadin.server.DefaultDeploymentConfiguration - 
+=================================================================
+Vaadin is running in DEBUG MODE.
+Add productionMode=true to web.xml to disable debug features.
+To show debug window, add ?debug to your application URL.
+=================================================================
+2020-01-28 22:03:52.080 DEBUG [http-nio-8080-exec-51] com.haulmont.cuba.web.App - Initializing application
+2020-01-28 22:03:52.080 DEBUG [http-nio-8080-exec-12] com.haulmont.cuba.web.App - Initializing application
+2020-01-28 22:03:52.093 DEBUG [http-nio-8080-exec-12] com.haulmont.cuba.gui.theme.ThemeConstantsRepository - Loading theme constants
+2020-01-28 22:03:52.123 DEBUG [http-nio-8080-exec-51] com.haulmont.cuba.web.security.WebAnonymousSessionHolder - Loading anonymous session
+2020-01-28 22:03:52.304 DEBUG [http-nio-8080-exec-51] com.haulmont.cuba.web.security.WebAnonymousSessionHolder - Anonymous session loaded with id d6916d55-fa61-3e0f-9257-f66c67882e8e
+2020-01-28 22:03:52.319 DEBUG [http-nio-8080-exec-51/app/anonymous] com.haulmont.cuba.web.DefaultApp - connectionStateChanged connected: true, authenticated: false
+2020-01-28 22:03:52.320 DEBUG [http-nio-8080-exec-51/app/anonymous] com.haulmont.cuba.web.App - Closing all windows in all UIs
+2020-01-28 22:03:52.322 DEBUG [http-nio-8080-exec-12/app/anonymous] com.haulmont.cuba.web.DefaultApp - connectionStateChanged connected: true, authenticated: false
+2020-01-28 22:03:52.322 DEBUG [http-nio-8080-exec-12/app/anonymous] com.haulmont.cuba.web.App - Closing all windows in all UIs
+2020-01-28 22:03:52.368 INFO  [http-nio-8080-exec-51/app/anonymous] com.haulmont.cuba.gui.config.WindowConfig - WindowConfig initialized in 31 ms
+2020-01-28 22:03:57.318 INFO  [http-nio-8080-exec-54/app-core/server] com.haulmont.cuba.security.auth.AuthenticationManagerBean - Logged in: 2c8650c8-57e1-ad82-6843-f8b88442a917 [admin]
+2020-01-28 22:03:57.329 DEBUG [http-nio-8080-exec-54/app/admin] com.haulmont.cuba.web.DefaultApp - connectionStateChanged connected: true, authenticated: true
+2020-01-28 22:03:57.330 DEBUG [http-nio-8080-exec-54/app/admin] com.haulmont.cuba.web.App - Closing all windows in all UIs
+2020-01-28 22:03:57.334 DEBUG [http-nio-8080-exec-54/app/admin] com.haulmont.cuba.web.DefaultApp - Session reinitialized: HttpSession=org.apache.catalina.session.StandardSessionFacade@34d691ba, timeout=1800sec, UserSession=2c8650c8-57e1-ad82-6843-f8b88442a917 [admin]
+2020-01-28 22:03:57.808 INFO  [http-nio-8080-exec-54/app-core/admin] com.haulmont.cuba.core.sys.AbstractViewRepository - Initializing views
+2020-01-28 22:03:57.841 DEBUG [http-nio-8080-exec-54/app-core/admin] com.haulmont.cuba.core.app.StoreFactory - No implementation is specified for _MAIN_ store, using RdbmsStore
+2020-01-28 22:03:57.881 DEBUG [http-nio-8080-exec-54/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - loadList: metaClass=sec$UserSubstitution, view=com.haulmont.cuba.security.entity.UserSubstitution/app, query=Query{queryString='select us from sec$UserSubstitution us where us.user.id = :userId and (us.endDate is null or us.endDate >= :currentDate) and (us.startDate is null or us.startDate <= :currentDate) and (us.substitutedUser.active = true or us.substitutedUser.active is null) order by us.substitutedUser.name', condition=null, sort=null, firstResult=0, maxResults=0}
+2020-01-28 22:04:05.649 DEBUG [http-nio-8080-exec-51/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - loadList: metaClass=sec$UserSubstitution, view=com.haulmont.cuba.security.entity.UserSubstitution/app, query=Query{queryString='select us from sec$UserSubstitution us where us.user.id = :userId and (us.endDate is null or us.endDate >= :currentDate) and (us.startDate is null or us.startDate <= :currentDate) and (us.substitutedUser.active = true or us.substitutedUser.active is null) order by us.substitutedUser.name', condition=null, sort=null, firstResult=0, maxResults=0}
+2020-01-28 22:04:24.622 INFO  [http-nio-8080-exec-48/app/admin] com.haulmont.cuba.core.sys.AbstractViewRepository - Initializing views
+2020-01-28 22:04:24.681 INFO  [http-nio-8080-exec-48/app-core/admin] com.haulmont.cuba.core.app.PersistenceManager - Loading statistics cache
+2020-01-28 22:04:24.895 DEBUG [http-nio-8080-exec-48/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - loadList: metaClass=sec$Filter, view=com.haulmont.cuba.security.entity.FilterEntity/app, query=Query{queryString='select f from sec$Filter f left join f.user u where f.componentId = :component and (u.id = :userId or u is null) order by f.name', condition=null, sort=null, firstResult=0, maxResults=0}
+2020-01-28 22:04:24.958 DEBUG [http-nio-8080-exec-48/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - loadList: metaClass=sec$Presentation, view=com.haulmont.cuba.security.entity.Presentation/app, query=Query{queryString='select p from sec$Presentation p where p.componentId = :component and (p.user is null or p.user.id = :userId)', condition=null, sort=null, firstResult=0, maxResults=0}
+2020-01-28 22:04:25.913 DEBUG [http-nio-8080-exec-48/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - loadList: metaClass=sys$ScheduledTask, view=com.haulmont.cuba.core.entity.ScheduledTask/_local, query=Query{queryString=' select t from sys$ScheduledTask t order by t.beanName, t.methodName ', condition=null, sort=null, firstResult=0, maxResults=50}, max=50
+2020-01-28 22:04:50.779 INFO  [ClientCacheManager-pool-2-thread-1/app-core/server] com.haulmont.cuba.security.auth.AuthenticationManagerBean - Logged in: 9635e776-f37b-f458-0071-8ffdd9892e09 [admin]
+2020-01-28 22:05:23.906 DEBUG [http-nio-8080-exec-19/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - loadList: metaClass=sec$Filter, view=com.haulmont.cuba.security.entity.FilterEntity/app, query=Query{queryString='select f from sec$Filter f left join f.user u where f.componentId = :component and (u.id = :userId or u is null) order by f.name', condition=null, sort=null, firstResult=0, maxResults=0}
+2020-01-28 22:05:23.966 DEBUG [http-nio-8080-exec-19/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - loadList: metaClass=sec$User, view=com.haulmont.cuba.security.entity.User/user.browse, query=Query{queryString=' select u from sec$User u ', condition=null, sort=null, firstResult=0, maxResults=50}, max=50
+2020-01-28 22:06:13.700 DEBUG [http-nio-8080-exec-3/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - commit: commitInstances=[ScheduledTask{b47db48a-6017-9d08-b8b3-fad2249c1963, beanName=mailreader_ReceiveEmailsService, methodName=receive, period=10, startDate=2020-01-28 00:00:00.000}], removeInstances=[]
+2020-01-28 22:06:13.707 DEBUG [http-nio-8080-exec-3/app-core/admin] com.haulmont.cuba.core.app.SavedEntitiesHolder - Created SavedEntitiesHolder@7abb0b66
+2020-01-28 22:06:13.708 DEBUG [http-nio-8080-exec-3/app-core/admin] com.haulmont.cuba.core.app.SavedEntitiesHolder - SavedEntitiesHolder@7abb0b66 updates entities: [ScheduledTask{b47db48a-6017-9d08-b8b3-fad2249c1963, beanName=mailreader_ReceiveEmailsService, methodName=receive, period=10, startDate=2020-01-28 00:00:00.000}]
+2020-01-28 22:06:13.709 DEBUG [http-nio-8080-exec-3/app-core/admin] com.haulmont.cuba.security.app.EntityLog - Loading entities
+2020-01-28 22:06:13.717 DEBUG [http-nio-8080-exec-3/app-core/admin] com.haulmont.cuba.security.app.EntityLog - Loaded: entitiesAuto=0, entitiesManual=0
+2020-01-28 22:06:13.730 DEBUG [http-nio-8080-exec-3/app-core/admin] com.haulmont.cuba.core.app.SavedEntitiesHolder - Released SavedEntitiesHolder@7abb0b66
+2020-01-28 22:06:21.603 INFO  [ScheduledRunnerThread-1/app-core/server] com.haulmont.cuba.security.auth.AuthenticationManagerBean - Logged in: 1bf2b97b-e33f-2e17-3b86-467ec3dc0ace [admin]
+2020-01-28 22:06:23.541 ERROR [ScheduledRunnerThread-1/app-core/admin] com.haulmont.cuba.core.sys.ServiceInterceptor - Exception: 
+javax.persistence.PersistenceException: Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.3.6-cuba): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLIntegrityConstraintViolationException: integrity constraint violation: unique constraint or index violation: IDX_MAILREADER_TASK_UNIQ_SHORTDESC
+Error Code: -104
+Call: INSERT INTO MAILREADER_TASK (ID, ACTUAL_TIME, CREATE_TS, CREATED_BY, DELETE_TS, DELETED_BY, PLANNING_TIME, SHORTDESC, TESTING_PLAN, UPDATE_TS, UPDATED_BY, VERSION) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [f775d38d-800c-429a-749d-76748caf2fb2, null, 2020-01-28 22:06:23.523, admin, null, null, null, Снабжение, null, 2020-01-28 22:06:23.523, null, 1]
+Query: InsertObjectQuery(com.company.mailreader.entity.Task-f775d38d-800c-429a-749d-76748caf2fb2 [new,managed])
+	at org.eclipse.persistence.internal.jpa.EntityManagerImpl.flush(EntityManagerImpl.java:979) ~[org.eclipse.persistence.jpa-2.7.3-6-cuba.jar:na]
+	at com.haulmont.cuba.core.sys.persistence.PersistenceImplSupport$ContainerResourceSynchronization.detachAll(PersistenceImplSupport.java:496) ~[cuba-core-7.1.3.jar:7.1.3]
+	at com.haulmont.cuba.core.sys.persistence.PersistenceImplSupport$ContainerResourceSynchronization.beforeCommit(PersistenceImplSupport.java:449) ~[cuba-core-7.1.3.jar:7.1.3]
+	at org.springframework.transaction.support.TransactionSynchronizationUtils.triggerBeforeCommit(TransactionSynchronizationUtils.java:96) ~[spring-tx-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.triggerBeforeCommit(AbstractPlatformTransactionManager.java:922) ~[spring-tx-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:730) ~[spring-tx-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:714) ~[spring-tx-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at com.haulmont.cuba.core.sys.TransactionImpl.commit(TransactionImpl.java:104) ~[cuba-core-7.1.3.jar:7.1.3]
+	at com.company.mailreader.service.ReceiveEmailsServiceBean.receive(ReceiveEmailsServiceBean.java:57) ~[app-core-0.1-SNAPSHOT.jar:na]
+	at com.company.mailreader.service.ReceiveEmailsServiceBean$$FastClassBySpringCGLIB$$5479a1a.invoke(<generated>) ~[app-core-0.1-SNAPSHOT.jar:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749) ~[spring-aop-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) [spring-aop-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88) ~[spring-aop-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at com.haulmont.cuba.core.sys.ServiceInterceptor.aroundInvoke(ServiceInterceptor.java:116) ~[cuba-core-7.1.3.jar:7.1.3]
+	at sun.reflect.GeneratedMethodAccessor102.invoke(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_231]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_231]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644) [spring-aop-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633) [spring-aop-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70) [spring-aop-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:175) [spring-aop-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93) [spring-aop-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688) [spring-aop-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at com.company.mailreader.service.ReceiveEmailsServiceBean$$EnhancerBySpringCGLIB$$c1a1d63b.receive(<generated>) [app-core-0.1-SNAPSHOT.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_231]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_231]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_231]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_231]
+	at com.haulmont.cuba.core.app.scheduling.RunnerBean.executeTask(RunnerBean.java:241) [cuba-core-7.1.3.jar:7.1.3]
+	at com.haulmont.cuba.core.app.scheduling.RunnerBean.lambda$runTask$0(RunnerBean.java:141) [cuba-core-7.1.3.jar:7.1.3]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[na:1.8.0_231]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_231]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[na:1.8.0_231]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[na:1.8.0_231]
+	at java.lang.Thread.run(Thread.java:748) ~[na:1.8.0_231]
+Caused by: org.eclipse.persistence.exceptions.DatabaseException: 
+Internal Exception: java.sql.SQLIntegrityConstraintViolationException: integrity constraint violation: unique constraint or index violation: IDX_MAILREADER_TASK_UNIQ_SHORTDESC
+Error Code: -104
+Call: INSERT INTO MAILREADER_TASK (ID, ACTUAL_TIME, CREATE_TS, CREATED_BY, DELETE_TS, DELETED_BY, PLANNING_TIME, SHORTDESC, TESTING_PLAN, UPDATE_TS, UPDATED_BY, VERSION) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [f775d38d-800c-429a-749d-76748caf2fb2, null, 2020-01-28 22:06:23.523, admin, null, null, null, Снабжение, null, 2020-01-28 22:06:23.523, null, 1]
+Query: InsertObjectQuery(com.company.mailreader.entity.Task-f775d38d-800c-429a-749d-76748caf2fb2 [new])
+	at org.eclipse.persistence.exceptions.DatabaseException.sqlException(DatabaseException.java:333) ~[org.eclipse.persistence.core-2.7.3-6-cuba.jar:na]
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeDirectNoSelect(DatabaseAccessor.java:952) ~[org.eclipse.persistence.core-2.7.3-6-cuba.jar:na]
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeNoSelect(DatabaseAccessor.java:1014) ~[org.eclipse.persistence.core-2.7.3-6-cuba.jar:na]
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.basicExecuteCall(DatabaseAccessor.java:656) ~[org.eclipse.persistence.core-2.7.3-6-cuba.jar:na]
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeCall(DatabaseAccessor.java:564) ~[org.eclipse.persistence.core-2.7.3-6-cuba.jar:na]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.basicExecuteCall(AbstractSession.java:2093) ~[org.eclipse.persistence.core-2.7.3-6-cuba.jar:na]
+	at org.eclipse.persistence.sessions.server.ClientSession.executeCall(ClientSession.java:311) ~[org.eclipse.persistence.core-2.7.3-6-cuba.jar:na]
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:275) ~[org.eclipse.persistence.core-2.7.3-6-cuba.jar:na]
+	at org.eclipse.persistence.internal.queries.ExpressionQueryMechanism.executeCall(ExpressionQueryMechanism.java:2897) ~[org.eclipse.persistence.core-2.7.3-6-cuba.jar:na]
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:261) ~[org.eclipse.persistence.core-2.7.3-6-cuba.jar:na]
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.insertObject(DatasourceCallQueryMechanism.java:411) ~[org.eclipse.persistence.core-2.7.3-6-cuba.jar:na]
+	at org.eclipse.persistence.internal.queries.StatementQueryMechanism.insertObject(StatementQueryMechanism.java:167) ~[org.eclipse.persistence.core-2.7.3-6-cuba.jar:na]
+	at org.eclipse.persistence.internal.queries.StatementQueryMechanism.insertObject(StatementQueryMechanism.java:182) ~[org.eclipse.persistence.core-2.7.3-6-cuba.jar:na]
+	at org.eclipse.persistence.internal.queries.DatabaseQueryMechanism.insertObjectForWrite(DatabaseQueryMechanism.java:504) ~[org.eclipse.persistence.core-2.7.3-6-cuba.jar:na]
+	at org.eclipse.persistence.queries.InsertObjectQuery.executeCommit(InsertObjectQuery.java:82) ~[org.eclipse.persistence.core-2.7.3-6-cuba.jar:na]
+	at org.eclipse.persistence.queries.InsertObjectQuery.executeCommitWithChangeSet(InsertObjectQuery.java:92) ~[org.eclipse.persistence.core-2.7.3-6-cuba.jar:na]
+	at org.eclipse.persistence.internal.queries.DatabaseQueryMechanism.executeWriteWithChangeSet(DatabaseQueryMechanism.java:316) ~[org.eclipse.persistence.core-2.7.3-6-cuba.jar:na]
+	at org.eclipse.persistence.queries.WriteObjectQuery.executeDatabaseQuery(WriteObjectQuery.java:60) ~[org.eclipse.persistence.core-2.7.3-6-cuba.jar:na]
+	at org.eclipse.persistence.queries.DatabaseQuery.execute(DatabaseQuery.java:914) ~[org.eclipse.persistence.core-2.7.3-6-cuba.jar:na]
+	at org.eclipse.persistence.queries.DatabaseQuery.executeInUnitOfWork(DatabaseQuery.java:813) ~[org.eclipse.persistence.core-2.7.3-6-cuba.jar:na]
+	at org.eclipse.persistence.queries.ObjectLevelModifyQuery.executeInUnitOfWorkObjectLevelModifyQuery(ObjectLevelModifyQuery.java:110) ~[org.eclipse.persistence.core-2.7.3-6-cuba.jar:na]
+	at org.eclipse.persistence.queries.ObjectLevelModifyQuery.executeInUnitOfWork(ObjectLevelModifyQuery.java:87) ~[org.eclipse.persistence.core-2.7.3-6-cuba.jar:na]
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.internalExecuteQuery(UnitOfWorkImpl.java:3020) ~[org.eclipse.persistence.core-2.7.3-6-cuba.jar:na]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1892) ~[org.eclipse.persistence.core-2.7.3-6-cuba.jar:na]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1874) ~[org.eclipse.persistence.core-2.7.3-6-cuba.jar:na]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1824) ~[org.eclipse.persistence.core-2.7.3-6-cuba.jar:na]
+	at org.eclipse.persistence.internal.sessions.CommitManager.commitNewObjectsForClassWithChangeSet(CommitManager.java:229) ~[org.eclipse.persistence.core-2.7.3-6-cuba.jar:na]
+	at org.eclipse.persistence.internal.sessions.CommitManager.commitAllObjectsForClassWithChangeSet(CommitManager.java:196) ~[org.eclipse.persistence.core-2.7.3-6-cuba.jar:na]
+	at org.eclipse.persistence.internal.sessions.CommitManager.commitAllObjectsWithChangeSet(CommitManager.java:141) ~[org.eclipse.persistence.core-2.7.3-6-cuba.jar:na]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.writeAllObjectsWithChangeSet(AbstractSession.java:4384) ~[org.eclipse.persistence.core-2.7.3-6-cuba.jar:na]
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.commitToDatabase(UnitOfWorkImpl.java:1489) ~[org.eclipse.persistence.core-2.7.3-6-cuba.jar:na]
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.commitToDatabaseWithPreBuiltChangeSet(UnitOfWorkImpl.java:1635) ~[org.eclipse.persistence.core-2.7.3-6-cuba.jar:na]
+	at org.eclipse.persistence.internal.sessions.RepeatableWriteUnitOfWork.writeChanges(RepeatableWriteUnitOfWork.java:457) ~[org.eclipse.persistence.core-2.7.3-6-cuba.jar:na]
+	at org.eclipse.persistence.internal.jpa.EntityManagerImpl.flush(EntityManagerImpl.java:974) ~[org.eclipse.persistence.jpa-2.7.3-6-cuba.jar:na]
+	... 36 common frames omitted
+Caused by: java.sql.SQLIntegrityConstraintViolationException: integrity constraint violation: unique constraint or index violation: IDX_MAILREADER_TASK_UNIQ_SHORTDESC
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source) ~[hsqldb-2.4.1.jar:2.4.1]
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source) ~[hsqldb-2.4.1.jar:2.4.1]
+	at org.hsqldb.jdbc.JDBCPreparedStatement.fetchResult(Unknown Source) ~[hsqldb-2.4.1.jar:2.4.1]
+	at org.hsqldb.jdbc.JDBCPreparedStatement.executeUpdate(Unknown Source) ~[hsqldb-2.4.1.jar:2.4.1]
+	at org.apache.tomcat.dbcp.dbcp2.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:136) ~[tomcat-dbcp.jar:9.0.19]
+	at org.apache.tomcat.dbcp.dbcp2.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:136) ~[tomcat-dbcp.jar:9.0.19]
+	at com.haulmont.cuba.core.sys.jdbc.ProxyPreparedStatement.lambda$executeUpdate$1(ProxyPreparedStatement.java:39) ~[cuba-core-7.1.3.jar:7.1.3]
+	at com.haulmont.cuba.core.sys.jdbc.ProxyStatement.executeSqlStatement(ProxyStatement.java:257) ~[cuba-core-7.1.3.jar:7.1.3]
+	at com.haulmont.cuba.core.sys.jdbc.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:39) ~[cuba-core-7.1.3.jar:7.1.3]
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeDirectNoSelect(DatabaseAccessor.java:942) ~[org.eclipse.persistence.core-2.7.3-6-cuba.jar:na]
+	... 68 common frames omitted
+2020-01-28 22:06:23.565 ERROR [ScheduledRunnerThread-1] com.haulmont.cuba.core.app.scheduling.RunnerBean - Error running ScheduledTask{b47db48a-6017-9d08-b8b3-fad2249c1963, beanName=mailreader_ReceiveEmailsService, methodName=receive, period=10, startDate=2020-01-28 00:00:00.000}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at com.haulmont.cuba.core.app.scheduling.RunnerBean.executeTask(RunnerBean.java:243) ~[cuba-core-7.1.3.jar:7.1.3]
+	at com.haulmont.cuba.core.app.scheduling.RunnerBean.lambda$runTask$0(RunnerBean.java:141) ~[cuba-core-7.1.3.jar:7.1.3]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[na:1.8.0_231]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_231]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[na:1.8.0_231]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[na:1.8.0_231]
+	at java.lang.Thread.run(Thread.java:748) ~[na:1.8.0_231]
+Caused by: java.lang.reflect.InvocationTargetException: null
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_231]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_231]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_231]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_231]
+	at com.haulmont.cuba.core.app.scheduling.RunnerBean.executeTask(RunnerBean.java:241) ~[cuba-core-7.1.3.jar:7.1.3]
+	... 6 common frames omitted
+Caused by: com.haulmont.cuba.core.global.RemoteException: integrity constraint violation: unique constraint or index violation: IDX_MAILREADER_TASK_UNIQ_SHORTDESC
+	at com.haulmont.cuba.core.sys.ServiceInterceptor.aroundInvoke(ServiceInterceptor.java:124) ~[cuba-core-7.1.3.jar:7.1.3]
+	at sun.reflect.GeneratedMethodAccessor102.invoke(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_231]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_231]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644) ~[spring-aop-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633) ~[spring-aop-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70) ~[spring-aop-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:175) ~[spring-aop-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93) ~[spring-aop-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688) ~[spring-aop-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at com.company.mailreader.service.ReceiveEmailsServiceBean$$EnhancerBySpringCGLIB$$c1a1d63b.receive(<generated>) ~[app-core-0.1-SNAPSHOT.jar:na]
+	... 11 common frames omitted
+2020-01-28 22:07:27.522 ERROR [ScheduledRunnerThread-2/app-core/admin] com.haulmont.cuba.core.sys.ServiceInterceptor - Exception: 
+javax.persistence.PersistenceException: Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.3.6-cuba): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLIntegrityConstraintViolationException: integrity constraint violation: unique constraint or index violation: IDX_MAILREADER_TASK_UNIQ_SHORTDESC
+Error Code: -104
+Call: INSERT INTO MAILREADER_TASK (ID, ACTUAL_TIME, CREATE_TS, CREATED_BY, DELETE_TS, DELETED_BY, PLANNING_TIME, SHORTDESC, TESTING_PLAN, UPDATE_TS, UPDATED_BY, VERSION) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [164a1eae-37e2-ba34-8da5-115ed7c8c33d, null, 2020-01-28 22:07:27.511, admin, null, null, null, Снабжение, null, 2020-01-28 22:07:27.511, null, 1]
+Query: InsertObjectQuery(com.company.mailreader.entity.Task-164a1eae-37e2-ba34-8da5-115ed7c8c33d [new,managed])
+	at org.eclipse.persistence.internal.jpa.EntityManagerImpl.flush(EntityManagerImpl.java:979) ~[org.eclipse.persistence.jpa-2.7.3-6-cuba.jar:na]
+	at com.haulmont.cuba.core.sys.persistence.PersistenceImplSupport$ContainerResourceSynchronization.detachAll(PersistenceImplSupport.java:496) ~[cuba-core-7.1.3.jar:7.1.3]
+	at com.haulmont.cuba.core.sys.persistence.PersistenceImplSupport$ContainerResourceSynchronization.beforeCommit(PersistenceImplSupport.java:449) ~[cuba-core-7.1.3.jar:7.1.3]
+	at org.springframework.transaction.support.TransactionSynchronizationUtils.triggerBeforeCommit(TransactionSynchronizationUtils.java:96) ~[spring-tx-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.triggerBeforeCommit(AbstractPlatformTransactionManager.java:922) ~[spring-tx-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:730) ~[spring-tx-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:714) ~[spring-tx-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at com.haulmont.cuba.core.sys.TransactionImpl.commit(TransactionImpl.java:104) ~[cuba-core-7.1.3.jar:7.1.3]
+	at com.company.mailreader.service.ReceiveEmailsServiceBean.receive(ReceiveEmailsServiceBean.java:57) ~[app-core-0.1-SNAPSHOT.jar:na]
+	at com.company.mailreader.service.ReceiveEmailsServiceBean$$FastClassBySpringCGLIB$$5479a1a.invoke(<generated>) ~[app-core-0.1-SNAPSHOT.jar:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749) ~[spring-aop-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) [spring-aop-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88) ~[spring-aop-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at com.haulmont.cuba.core.sys.ServiceInterceptor.aroundInvoke(ServiceInterceptor.java:116) ~[cuba-core-7.1.3.jar:7.1.3]
+	at sun.reflect.GeneratedMethodAccessor102.invoke(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_231]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_231]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644) [spring-aop-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633) [spring-aop-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70) [spring-aop-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:175) [spring-aop-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93) [spring-aop-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688) [spring-aop-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at com.company.mailreader.service.ReceiveEmailsServiceBean$$EnhancerBySpringCGLIB$$c1a1d63b.receive(<generated>) [app-core-0.1-SNAPSHOT.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_231]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_231]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_231]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_231]
+	at com.haulmont.cuba.core.app.scheduling.RunnerBean.executeTask(RunnerBean.java:241) [cuba-core-7.1.3.jar:7.1.3]
+	at com.haulmont.cuba.core.app.scheduling.RunnerBean.lambda$runTask$0(RunnerBean.java:141) [cuba-core-7.1.3.jar:7.1.3]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[na:1.8.0_231]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_231]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[na:1.8.0_231]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[na:1.8.0_231]
+	at java.lang.Thread.run(Thread.java:748) ~[na:1.8.0_231]
+Caused by: org.eclipse.persistence.exceptions.DatabaseException: 
+Internal Exception: java.sql.SQLIntegrityConstraintViolationException: integrity constraint violation: unique constraint or index violation: IDX_MAILREADER_TASK_UNIQ_SHORTDESC
+Error Code: -104
+Call: INSERT INTO MAILREADER_TASK (ID, ACTUAL_TIME, CREATE_TS, CREATED_BY, DELETE_TS, DELETED_BY, PLANNING_TIME, SHORTDESC, TESTING_PLAN, UPDATE_TS, UPDATED_BY, VERSION) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [164a1eae-37e2-ba34-8da5-115ed7c8c33d, null, 2020-01-28 22:07:27.511, admin, null, null, null, Снабжение, null, 2020-01-28 22:07:27.511, null, 1]
+Query: InsertObjectQuery(com.company.mailreader.entity.Task-164a1eae-37e2-ba34-8da5-115ed7c8c33d [new])
+	at org.eclipse.persistence.exceptions.DatabaseException.sqlException(DatabaseException.java:333) ~[org.eclipse.persistence.core-2.7.3-6-cuba.jar:na]
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeDirectNoSelect(DatabaseAccessor.java:952) ~[org.eclipse.persistence.core-2.7.3-6-cuba.jar:na]
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeNoSelect(DatabaseAccessor.java:1014) ~[org.eclipse.persistence.core-2.7.3-6-cuba.jar:na]
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.basicExecuteCall(DatabaseAccessor.java:656) ~[org.eclipse.persistence.core-2.7.3-6-cuba.jar:na]
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeCall(DatabaseAccessor.java:564) ~[org.eclipse.persistence.core-2.7.3-6-cuba.jar:na]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.basicExecuteCall(AbstractSession.java:2093) ~[org.eclipse.persistence.core-2.7.3-6-cuba.jar:na]
+	at org.eclipse.persistence.sessions.server.ClientSession.executeCall(ClientSession.java:311) ~[org.eclipse.persistence.core-2.7.3-6-cuba.jar:na]
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:275) ~[org.eclipse.persistence.core-2.7.3-6-cuba.jar:na]
+	at org.eclipse.persistence.internal.queries.ExpressionQueryMechanism.executeCall(ExpressionQueryMechanism.java:2897) ~[org.eclipse.persistence.core-2.7.3-6-cuba.jar:na]
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:261) ~[org.eclipse.persistence.core-2.7.3-6-cuba.jar:na]
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.insertObject(DatasourceCallQueryMechanism.java:411) ~[org.eclipse.persistence.core-2.7.3-6-cuba.jar:na]
+	at org.eclipse.persistence.internal.queries.StatementQueryMechanism.insertObject(StatementQueryMechanism.java:167) ~[org.eclipse.persistence.core-2.7.3-6-cuba.jar:na]
+	at org.eclipse.persistence.internal.queries.StatementQueryMechanism.insertObject(StatementQueryMechanism.java:182) ~[org.eclipse.persistence.core-2.7.3-6-cuba.jar:na]
+	at org.eclipse.persistence.internal.queries.DatabaseQueryMechanism.insertObjectForWrite(DatabaseQueryMechanism.java:504) ~[org.eclipse.persistence.core-2.7.3-6-cuba.jar:na]
+	at org.eclipse.persistence.queries.InsertObjectQuery.executeCommit(InsertObjectQuery.java:82) ~[org.eclipse.persistence.core-2.7.3-6-cuba.jar:na]
+	at org.eclipse.persistence.queries.InsertObjectQuery.executeCommitWithChangeSet(InsertObjectQuery.java:92) ~[org.eclipse.persistence.core-2.7.3-6-cuba.jar:na]
+	at org.eclipse.persistence.internal.queries.DatabaseQueryMechanism.executeWriteWithChangeSet(DatabaseQueryMechanism.java:316) ~[org.eclipse.persistence.core-2.7.3-6-cuba.jar:na]
+	at org.eclipse.persistence.queries.WriteObjectQuery.executeDatabaseQuery(WriteObjectQuery.java:60) ~[org.eclipse.persistence.core-2.7.3-6-cuba.jar:na]
+	at org.eclipse.persistence.queries.DatabaseQuery.execute(DatabaseQuery.java:914) ~[org.eclipse.persistence.core-2.7.3-6-cuba.jar:na]
+	at org.eclipse.persistence.queries.DatabaseQuery.executeInUnitOfWork(DatabaseQuery.java:813) ~[org.eclipse.persistence.core-2.7.3-6-cuba.jar:na]
+	at org.eclipse.persistence.queries.ObjectLevelModifyQuery.executeInUnitOfWorkObjectLevelModifyQuery(ObjectLevelModifyQuery.java:110) ~[org.eclipse.persistence.core-2.7.3-6-cuba.jar:na]
+	at org.eclipse.persistence.queries.ObjectLevelModifyQuery.executeInUnitOfWork(ObjectLevelModifyQuery.java:87) ~[org.eclipse.persistence.core-2.7.3-6-cuba.jar:na]
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.internalExecuteQuery(UnitOfWorkImpl.java:3020) ~[org.eclipse.persistence.core-2.7.3-6-cuba.jar:na]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1892) ~[org.eclipse.persistence.core-2.7.3-6-cuba.jar:na]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1874) ~[org.eclipse.persistence.core-2.7.3-6-cuba.jar:na]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1824) ~[org.eclipse.persistence.core-2.7.3-6-cuba.jar:na]
+	at org.eclipse.persistence.internal.sessions.CommitManager.commitNewObjectsForClassWithChangeSet(CommitManager.java:229) ~[org.eclipse.persistence.core-2.7.3-6-cuba.jar:na]
+	at org.eclipse.persistence.internal.sessions.CommitManager.commitAllObjectsForClassWithChangeSet(CommitManager.java:196) ~[org.eclipse.persistence.core-2.7.3-6-cuba.jar:na]
+	at org.eclipse.persistence.internal.sessions.CommitManager.commitAllObjectsWithChangeSet(CommitManager.java:141) ~[org.eclipse.persistence.core-2.7.3-6-cuba.jar:na]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.writeAllObjectsWithChangeSet(AbstractSession.java:4384) ~[org.eclipse.persistence.core-2.7.3-6-cuba.jar:na]
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.commitToDatabase(UnitOfWorkImpl.java:1489) ~[org.eclipse.persistence.core-2.7.3-6-cuba.jar:na]
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.commitToDatabaseWithPreBuiltChangeSet(UnitOfWorkImpl.java:1635) ~[org.eclipse.persistence.core-2.7.3-6-cuba.jar:na]
+	at org.eclipse.persistence.internal.sessions.RepeatableWriteUnitOfWork.writeChanges(RepeatableWriteUnitOfWork.java:457) ~[org.eclipse.persistence.core-2.7.3-6-cuba.jar:na]
+	at org.eclipse.persistence.internal.jpa.EntityManagerImpl.flush(EntityManagerImpl.java:974) ~[org.eclipse.persistence.jpa-2.7.3-6-cuba.jar:na]
+	... 36 common frames omitted
+Caused by: java.sql.SQLIntegrityConstraintViolationException: integrity constraint violation: unique constraint or index violation: IDX_MAILREADER_TASK_UNIQ_SHORTDESC
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source) ~[hsqldb-2.4.1.jar:2.4.1]
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source) ~[hsqldb-2.4.1.jar:2.4.1]
+	at org.hsqldb.jdbc.JDBCPreparedStatement.fetchResult(Unknown Source) ~[hsqldb-2.4.1.jar:2.4.1]
+	at org.hsqldb.jdbc.JDBCPreparedStatement.executeUpdate(Unknown Source) ~[hsqldb-2.4.1.jar:2.4.1]
+	at org.apache.tomcat.dbcp.dbcp2.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:136) ~[tomcat-dbcp.jar:9.0.19]
+	at org.apache.tomcat.dbcp.dbcp2.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:136) ~[tomcat-dbcp.jar:9.0.19]
+	at com.haulmont.cuba.core.sys.jdbc.ProxyPreparedStatement.lambda$executeUpdate$1(ProxyPreparedStatement.java:39) ~[cuba-core-7.1.3.jar:7.1.3]
+	at com.haulmont.cuba.core.sys.jdbc.ProxyStatement.executeSqlStatement(ProxyStatement.java:257) ~[cuba-core-7.1.3.jar:7.1.3]
+	at com.haulmont.cuba.core.sys.jdbc.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:39) ~[cuba-core-7.1.3.jar:7.1.3]
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeDirectNoSelect(DatabaseAccessor.java:942) ~[org.eclipse.persistence.core-2.7.3-6-cuba.jar:na]
+	... 68 common frames omitted
+2020-01-28 22:07:27.534 ERROR [ScheduledRunnerThread-2] com.haulmont.cuba.core.app.scheduling.RunnerBean - Error running ScheduledTask{b47db48a-6017-9d08-b8b3-fad2249c1963, beanName=mailreader_ReceiveEmailsService, methodName=receive, period=10, startDate=2020-01-28 00:00:00.000}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at com.haulmont.cuba.core.app.scheduling.RunnerBean.executeTask(RunnerBean.java:243) ~[cuba-core-7.1.3.jar:7.1.3]
+	at com.haulmont.cuba.core.app.scheduling.RunnerBean.lambda$runTask$0(RunnerBean.java:141) ~[cuba-core-7.1.3.jar:7.1.3]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[na:1.8.0_231]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_231]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[na:1.8.0_231]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[na:1.8.0_231]
+	at java.lang.Thread.run(Thread.java:748) ~[na:1.8.0_231]
+Caused by: java.lang.reflect.InvocationTargetException: null
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_231]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_231]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_231]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_231]
+	at com.haulmont.cuba.core.app.scheduling.RunnerBean.executeTask(RunnerBean.java:241) ~[cuba-core-7.1.3.jar:7.1.3]
+	... 6 common frames omitted
+Caused by: com.haulmont.cuba.core.global.RemoteException: integrity constraint violation: unique constraint or index violation: IDX_MAILREADER_TASK_UNIQ_SHORTDESC
+	at com.haulmont.cuba.core.sys.ServiceInterceptor.aroundInvoke(ServiceInterceptor.java:124) ~[cuba-core-7.1.3.jar:7.1.3]
+	at sun.reflect.GeneratedMethodAccessor102.invoke(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_231]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_231]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644) ~[spring-aop-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633) ~[spring-aop-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70) ~[spring-aop-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:175) ~[spring-aop-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93) ~[spring-aop-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688) ~[spring-aop-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at com.company.mailreader.service.ReceiveEmailsServiceBean$$EnhancerBySpringCGLIB$$c1a1d63b.receive(<generated>) ~[app-core-0.1-SNAPSHOT.jar:na]
+	... 11 common frames omitted
+2020-01-28 22:08:35.253 DEBUG [http-nio-8080-exec-25] com.haulmont.cuba.web.App - Initializing application
+2020-01-28 22:08:35.266 DEBUG [http-nio-8080-exec-25/app/anonymous] com.haulmont.cuba.web.DefaultApp - connectionStateChanged connected: true, authenticated: false
+2020-01-28 22:08:35.266 DEBUG [http-nio-8080-exec-25/app/anonymous] com.haulmont.cuba.web.App - Closing all windows in all UIs
+2020-01-28 22:09:31.002 INFO  [main] com.haulmont.cuba.core.sys.AppComponents - Using app components: [com.haulmont.cuba]
+2020-01-28 22:09:31.077 INFO  [main] com.haulmont.cuba.core.sys.AbstractWebAppContextLoader - Loading app properties from classpath:com/company/mailreader/web-app.properties
+2020-01-28 22:09:31.194 INFO  [main] com.haulmont.cuba.core.sys.environmentcheck.EnvironmentChecksRunner - Environment checks on web module completed successfully
+2020-01-28 22:09:34.605 INFO  [main] com.haulmont.cuba.core.sys.remoting.discovery.StaticServerSelector - Server URLs: [http://localhost:8080/app-core/remoting]
+2020-01-28 22:09:34.633 INFO  [main] com.haulmont.cuba.web.sys.remoting.WebRemoteProxyBeanCreator - Configuring proxy beans for local service invocations: [cuba_ConstraintScriptValidationService, cuba_AuthenticationService, cuba_TrustedClientService, cuba_ServerInfoService, cuba_UserSettingService, cuba_UserManagementService, cuba_DataService, cuba_ConfigStorageService, cuba_PersistenceManagerService, cuba_LockService, cuba_UserSessionService, cuba_FoldersService, cuba_EmailService, cuba_FileStorageService, cuba_EntitySnapshotService, cuba_UniqueNumbersService, cuba_LocalizedMessageService, cuba_ResourceService, cuba_ScheduledTasksService, cuba_EntityLogService, cuba_TestingService, cuba_DomainDescriptionService, cuba_RelatedEntitiesService, cuba_EntitySqlGenerationService, cuba_NumberIdService, cuba_QueryResultsService, cuba_DynamicAttributesCacheService, cuba_EntityRestoreService, cuba_LocalFileExchangeService, cuba_EntityImportExportService, cuba_ConstraintLocalizationService, cuba_AttributeAccessService, cuba_ExceptionReportService, cuba_BulkEditorDataService, cuba_AttributeOptionsLoaderService]
+2020-01-28 22:09:34.635 INFO  [main] com.haulmont.cuba.web.sys.remoting.WebRemoteProxyBeanCreator - Configuring proxy beans for local service invocations: [mailreader_ImapService, mailreader_ReceiveEmailsService]
+2020-01-28 22:09:36.139 INFO  [main] com.haulmont.cuba.core.sys.CubaThreadPoolTaskScheduler - Initializing ExecutorService 'scheduler'
+2020-01-28 22:09:36.338 INFO  [main] com.haulmont.cuba.core.sys.jmx.MBeanExporter - Registering beans for JMX exposure: [app.cuba:type=ConfigStorage, app.cuba:type=CachingFacade, app.cuba:type=FileUploading, app.cuba:type=JmxNodeIdentifier, app.cuba:type=JmxLogControl, app.cuba:type=ClassLoaderManager, app.cuba:type=StatisticsCounter]
+2020-01-28 22:09:36.526 DEBUG [main] com.haulmont.cuba.gui.components.impl.ActionsImpl - Actions initialized in 34 ms
+2020-01-28 22:09:36.532 INFO  [main] com.haulmont.cuba.core.sys.MetadataImpl - Initializing metadata
+2020-01-28 22:09:36.777 INFO  [main] com.haulmont.cuba.core.sys.MetadataImpl - Metadata initialized in 245 ms
+2020-01-28 22:09:36.806 INFO  [main] com.haulmont.cuba.core.sys.AbstractWebAppContextLoader - AppContext started
+2020-01-28 22:09:36.939 INFO  [main] com.haulmont.cuba.web.sys.CubaDispatcherServlet - Initializing Servlet 'dispatcher'
+2020-01-28 22:09:37.358 DEBUG [main] org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider
+2020-01-28 22:09:38.036 INFO  [main] com.haulmont.cuba.web.sys.CubaDispatcherServlet - Completed initialization in 1097 ms
+2020-01-28 22:09:38.204 INFO  [main] com.haulmont.cuba.core.sys.AppComponents - Using app components: [com.haulmont.cuba]
+2020-01-28 22:09:38.213 INFO  [main] com.haulmont.cuba.core.sys.AbstractWebAppContextLoader - Loading app properties from classpath:com/company/mailreader/app.properties
+2020-01-28 22:09:38.225 INFO  [main] com.haulmont.cuba.core.sys.AppContextLoader - DbmsType of the main database is set to hsql
+2020-01-28 22:09:38.237 INFO  [main] com.haulmont.cuba.core.sys.environmentcheck.DataStoresCheck - Checking connection to data store _MAIN_
+2020-01-28 22:09:38.755 INFO  [main] com.haulmont.cuba.core.sys.environmentcheck.EnvironmentChecksRunner - Environment checks on core module completed successfully
+2020-01-28 22:09:38.830 INFO  [main] com.haulmont.cuba.core.sys.persistence.PersistenceConfigProcessor - Creating file /home/brrr/StudioProjects/mailreader/deploy/tomcat/work/app-core/persistence.xml
+2020-01-28 22:09:43.419 INFO  [main] com.haulmont.cuba.core.sys.CubaThreadPoolTaskScheduler - Initializing ExecutorService 'scheduler'
+2020-01-28 22:09:43.750 INFO  [main] com.haulmont.cuba.core.sys.jmx.MBeanExporter - Registering beans for JMX exposure: [app-core.cuba:type=PersistenceManager, app-core.cuba:type=ConfigStorage, app-core.cuba:type=UserSessions, app-core.cuba:type=UniqueNumbers, app-core.cuba:type=Emailer, app-core.cuba:type=EntityLog, app-core.cuba:type=FileStorage, app-core.cuba:type=LockManager, app-core.cuba:type=CachingFacade, app-core.cuba:type=ClusterManager, app-core.cuba:type=ScriptingManager, app-core.cuba:type=ServerInfo, app-core.cuba:type=Scheduling, app-core.cuba:type=PasswordEncryptionSupport, app-core.cuba:type=JmxNodeIdentifier, app-core.cuba:type=JmxLogControl, app-core.cuba:type=ClassLoaderManager, app-core.cuba:type=StatisticsCounter, app-core.cuba:type=BruteForceProtection, app-core.cuba:type=QueryCacheSupport]
+2020-01-28 22:09:43.944 INFO  [main] com.haulmont.cuba.core.sys.MetadataImpl - Initializing metadata
+2020-01-28 22:09:44.067 INFO  [main] com.haulmont.cuba.core.sys.MetadataImpl - Metadata initialized in 122 ms
+2020-01-28 22:09:44.196 DEBUG [main] com.haulmont.cuba.security.auth.AnonymousSessionHolder - Initialize anonymous session
+2020-01-28 22:09:44.811 INFO  [main/app-core/server] com.haulmont.cuba.core.app.ConfigStorage - Loading DB-stored app properties cache
+2020-01-28 22:09:45.295 INFO  [main/app-core/server] com.haulmont.cuba.core.sys.DefaultPermissionValuesConfig - Initializing default permission values
+2020-01-28 22:09:45.382 INFO  [main/app-core/server] com.haulmont.cuba.security.auth.AuthenticationManagerBean - Logged in: d6916d55-fa61-3e0f-9257-f66c67882e8e [anonymous]
+2020-01-28 22:09:45.382 DEBUG [main] com.haulmont.cuba.security.auth.AnonymousSessionHolder - Anonymous session initialized with id d6916d55-fa61-3e0f-9257-f66c67882e8e
+2020-01-28 22:09:45.383 INFO  [main] com.haulmont.cuba.core.sys.AbstractWebAppContextLoader - AppContext started
+2020-01-28 22:09:45.385 INFO  [main] com.haulmont.cuba.core.sys.remoting.RemotingServlet - Initializing Servlet 'remoting'
+2020-01-28 22:09:45.413 INFO  [main] com.haulmont.cuba.core.sys.remoting.RemoteServicesBeanCreator - Configuring remote services
+2020-01-28 22:09:45.550 DEBUG [cuba_core_scheduler-5] com.haulmont.cuba.core.app.queryresults.QueryResultsManager - Delete query results for inactive user sessions
+2020-01-28 22:09:45.585 INFO  [main] com.haulmont.cuba.core.sys.remoting.RemotingServlet - Completed initialization in 200 ms
+2020-01-28 22:09:45.822 WARN  [http-nio-8080-exec-2] com.vaadin.server.DefaultDeploymentConfiguration - 
+=================================================================
+Vaadin is running in DEBUG MODE.
+Add productionMode=true to web.xml to disable debug features.
+To show debug window, add ?debug to your application URL.
+=================================================================
+2020-01-28 22:10:04.941 DEBUG [http-nio-8080-exec-16] com.haulmont.cuba.web.App - Initializing application
+2020-01-28 22:10:04.950 DEBUG [http-nio-8080-exec-16] com.haulmont.cuba.gui.theme.ThemeConstantsRepository - Loading theme constants
+2020-01-28 22:10:04.988 DEBUG [http-nio-8080-exec-16] com.haulmont.cuba.web.security.WebAnonymousSessionHolder - Loading anonymous session
+2020-01-28 22:10:05.211 DEBUG [http-nio-8080-exec-16] com.haulmont.cuba.web.security.WebAnonymousSessionHolder - Anonymous session loaded with id d6916d55-fa61-3e0f-9257-f66c67882e8e
+2020-01-28 22:10:05.223 DEBUG [http-nio-8080-exec-16/app/anonymous] com.haulmont.cuba.web.DefaultApp - connectionStateChanged connected: true, authenticated: false
+2020-01-28 22:10:05.224 DEBUG [http-nio-8080-exec-16/app/anonymous] com.haulmont.cuba.web.App - Closing all windows in all UIs
+2020-01-28 22:10:05.266 INFO  [http-nio-8080-exec-16/app/anonymous] com.haulmont.cuba.gui.config.WindowConfig - WindowConfig initialized in 30 ms
+2020-01-28 22:10:08.388 INFO  [http-nio-8080-exec-20/app-core/server] com.haulmont.cuba.security.auth.AuthenticationManagerBean - Logged in: 968e9e0f-e036-b234-b486-dd06188e5cc1 [admin]
+2020-01-28 22:10:08.401 DEBUG [http-nio-8080-exec-20/app/admin] com.haulmont.cuba.web.DefaultApp - connectionStateChanged connected: true, authenticated: true
+2020-01-28 22:10:08.403 DEBUG [http-nio-8080-exec-20/app/admin] com.haulmont.cuba.web.App - Closing all windows in all UIs
+2020-01-28 22:10:08.407 DEBUG [http-nio-8080-exec-20/app/admin] com.haulmont.cuba.web.DefaultApp - Session reinitialized: HttpSession=org.apache.catalina.session.StandardSessionFacade@5f13b3ed, timeout=1800sec, UserSession=968e9e0f-e036-b234-b486-dd06188e5cc1 [admin]
+2020-01-28 22:10:08.660 INFO  [http-nio-8080-exec-20/app-core/admin] com.haulmont.cuba.core.sys.AbstractViewRepository - Initializing views
+2020-01-28 22:10:08.679 DEBUG [http-nio-8080-exec-20/app-core/admin] com.haulmont.cuba.core.app.StoreFactory - No implementation is specified for _MAIN_ store, using RdbmsStore
+2020-01-28 22:10:08.702 DEBUG [http-nio-8080-exec-20/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - loadList: metaClass=sec$UserSubstitution, view=com.haulmont.cuba.security.entity.UserSubstitution/app, query=Query{queryString='select us from sec$UserSubstitution us where us.user.id = :userId and (us.endDate is null or us.endDate >= :currentDate) and (us.startDate is null or us.startDate <= :currentDate) and (us.substitutedUser.active = true or us.substitutedUser.active is null) order by us.substitutedUser.name', condition=null, sort=null, firstResult=0, maxResults=0}
+2020-01-28 22:10:15.764 INFO  [http-nio-8080-exec-23/app/admin] com.haulmont.cuba.core.sys.AbstractViewRepository - Initializing views
+2020-01-28 22:10:15.796 INFO  [http-nio-8080-exec-23/app-core/admin] com.haulmont.cuba.core.app.PersistenceManager - Loading statistics cache
+2020-01-28 22:10:15.983 DEBUG [http-nio-8080-exec-23/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - loadList: metaClass=sec$Filter, view=com.haulmont.cuba.security.entity.FilterEntity/app, query=Query{queryString='select f from sec$Filter f left join f.user u where f.componentId = :component and (u.id = :userId or u is null) order by f.name', condition=null, sort=null, firstResult=0, maxResults=0}
+2020-01-28 22:10:16.062 DEBUG [http-nio-8080-exec-23/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - loadList: metaClass=sec$Presentation, view=com.haulmont.cuba.security.entity.Presentation/app, query=Query{queryString='select p from sec$Presentation p where p.componentId = :component and (p.user is null or p.user.id = :userId)', condition=null, sort=null, firstResult=0, maxResults=0}
+2020-01-28 22:10:16.557 DEBUG [http-nio-8080-exec-23/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - loadList: metaClass=sys$ScheduledTask, view=com.haulmont.cuba.core.entity.ScheduledTask/_local, query=Query{queryString=' select t from sys$ScheduledTask t order by t.beanName, t.methodName ', condition=null, sort=null, firstResult=0, maxResults=50}, max=50
+2020-01-28 22:10:30.068 DEBUG [http-nio-8080-exec-20/app-core/admin] com.haulmont.cuba.security.app.EntityLog - Loading entities
+2020-01-28 22:10:30.080 DEBUG [http-nio-8080-exec-20/app-core/admin] com.haulmont.cuba.security.app.EntityLog - Loaded: entitiesAuto=0, entitiesManual=0
+2020-01-28 22:10:30.092 DEBUG [http-nio-8080-exec-20/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - loadList: metaClass=sys$ScheduledTask, view=com.haulmont.cuba.core.entity.ScheduledTask/_local, query=Query{queryString=' select t from sys$ScheduledTask t order by t.beanName, t.methodName ', condition=null, sort=null, firstResult=0, maxResults=50}, max=50
+2020-01-28 22:10:42.542 DEBUG [http-nio-8080-exec-3/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - loadList: metaClass=sys$ScheduledTask, view=com.haulmont.cuba.core.entity.ScheduledTask/_local, query=Query{queryString=' select t from sys$ScheduledTask t order by t.beanName, t.methodName ', condition=null, sort=null, firstResult=0, maxResults=50}, max=50
+2020-01-28 22:10:44.325 INFO  [ScheduledRunnerThread-1/app-core/server] com.haulmont.cuba.security.auth.AuthenticationManagerBean - Logged in: b981485b-fa8c-427c-bb6e-22a3daa59244 [admin]
+2020-01-28 22:11:00.300 DEBUG [http-nio-8080-exec-19/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - loadList: metaClass=sys$JmxInstance, view=com.haulmont.cuba.core.entity.JmxInstance/_local, query=Query{queryString='select jmx from sys$JmxInstance jmx', condition=null, sort=null, firstResult=0, maxResults=0}
+2020-01-28 22:11:29.934 INFO  [ClientCacheManager-pool-2-thread-1/app-core/server] com.haulmont.cuba.security.auth.AuthenticationManagerBean - Logged in: 654637d4-10c2-f97c-40ba-958f85431552 [admin]
+2020-01-28 22:11:30.013 DEBUG [http-nio-8080-exec-11/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - loadList: metaClass=sec$Filter, view=com.haulmont.cuba.security.entity.FilterEntity/app, query=Query{queryString='select f from sec$Filter f left join f.user u where f.componentId = :component and (u.id = :userId or u is null) order by f.name', condition=null, sort=null, firstResult=0, maxResults=0}
+2020-01-28 22:11:30.083 DEBUG [http-nio-8080-exec-11/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - loadList: metaClass=sys$Category, view=com.haulmont.cuba.core.entity.Category/_local, query=Query{queryString=' select c from sys$Category c where c.special is null order by c.createTs ', condition=null, sort=null, firstResult=0, maxResults=50}, max=50
+2020-01-28 22:11:39.244 DEBUG [http-nio-8080-exec-7/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - loadList: metaClass=sec$UserSubstitution, view=com.haulmont.cuba.security.entity.UserSubstitution/app, query=Query{queryString='select us from sec$UserSubstitution us where us.user.id = :userId and (us.endDate is null or us.endDate >= :currentDate) and (us.startDate is null or us.startDate <= :currentDate) and (us.substitutedUser.active = true or us.substitutedUser.active is null) order by us.substitutedUser.name', condition=null, sort=null, firstResult=0, maxResults=0}
+2020-01-28 22:11:46.355 DEBUG [http-nio-8080-exec-13/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - loadList: metaClass=sec$Filter, view=com.haulmont.cuba.security.entity.FilterEntity/app, query=Query{queryString='select f from sec$Filter f left join f.user u where f.componentId = :component and (u.id = :userId or u is null) order by f.name', condition=null, sort=null, firstResult=0, maxResults=0}
+2020-01-28 22:11:46.409 DEBUG [http-nio-8080-exec-13/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - loadList: metaClass=sec$Presentation, view=com.haulmont.cuba.security.entity.Presentation/app, query=Query{queryString='select p from sec$Presentation p where p.componentId = :component and (p.user is null or p.user.id = :userId)', condition=null, sort=null, firstResult=0, maxResults=0}
+2020-01-28 22:11:46.442 DEBUG [http-nio-8080-exec-13/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - loadList: metaClass=sec$User, view=com.haulmont.cuba.security.entity.User/user.browse, query=Query{queryString=' select u from sec$User u ', condition=null, sort=null, firstResult=0, maxResults=50}, max=50
+2020-01-28 22:11:48.664 DEBUG [http-nio-8080-exec-7/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - loadList: metaClass=sec$Group, view=com.haulmont.cuba.security.entity.Group/group.browse, query=Query{queryString=' select g from sec$Group g order by g.name ', condition=null, sort=null, firstResult=0, maxResults=10000}, max=10000
+2020-01-28 22:11:48.743 DEBUG [http-nio-8080-exec-7/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - loadList: metaClass=sec$User, view=com.haulmont.cuba.security.entity.User/group.browse, query=Query{queryString='select u from sec$User u where u.group.id = :ds_groupsDs_id', condition=null, sort=null, firstResult=0, maxResults=50}, max=50
+2020-01-28 22:11:48.768 DEBUG [http-nio-8080-exec-7/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - loadList: metaClass=sec$Constraint, view=com.haulmont.cuba.security.entity.Constraint/group.browse, query=Query{queryString='select c from sec$Constraint c where c.group.id = :ds_groupsDs_id', condition=null, sort=null, firstResult=0, maxResults=10000}, max=10000
+2020-01-28 22:11:48.791 DEBUG [http-nio-8080-exec-7/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - loadList: metaClass=sec$SessionAttribute, view=com.haulmont.cuba.security.entity.SessionAttribute/_local, query=Query{queryString='select a from sec$SessionAttribute a where a.group.id = :ds_groupsDs_id', condition=null, sort=null, firstResult=0, maxResults=10000}, max=10000
+2020-01-28 22:11:48.860 DEBUG [http-nio-8080-exec-7/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - loadList: metaClass=sec$Filter, view=com.haulmont.cuba.security.entity.FilterEntity/app, query=Query{queryString='select f from sec$Filter f left join f.user u where f.componentId = :component and (u.id = :userId or u is null) order by f.name', condition=null, sort=null, firstResult=0, maxResults=0}
+2020-01-28 22:11:50.585 DEBUG [http-nio-8080-exec-19/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - loadList: metaClass=sec$Filter, view=com.haulmont.cuba.security.entity.FilterEntity/app, query=Query{queryString='select f from sec$Filter f left join f.user u where f.componentId = :component and (u.id = :userId or u is null) order by f.name', condition=null, sort=null, firstResult=0, maxResults=0}
+2020-01-28 22:11:50.607 DEBUG [http-nio-8080-exec-19/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - loadList: metaClass=sys$Category, view=com.haulmont.cuba.core.entity.Category/_local, query=Query{queryString=' select c from sys$Category c where c.special is null order by c.createTs ', condition=null, sort=null, firstResult=0, maxResults=50}, max=50
+2020-01-28 22:11:56.544 DEBUG [http-nio-8080-exec-13/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - loadList: metaClass=sec$Presentation, view=com.haulmont.cuba.security.entity.Presentation/app, query=Query{queryString='select p from sec$Presentation p where p.componentId = :component and (p.user is null or p.user.id = :userId)', condition=null, sort=null, firstResult=0, maxResults=0}
+2020-01-28 22:12:16.959 DEBUG [http-nio-8080-exec-5/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - commit: commitInstances=[com.haulmont.cuba.core.entity.Category-a92546eb-6a75-883e-4f7a-efb2d039e21c [new]], removeInstances=[]
+2020-01-28 22:12:16.966 DEBUG [http-nio-8080-exec-5/app-core/admin] com.haulmont.cuba.core.app.SavedEntitiesHolder - Created SavedEntitiesHolder@14848cee
+2020-01-28 22:12:16.966 DEBUG [http-nio-8080-exec-5/app-core/admin] com.haulmont.cuba.core.app.SavedEntitiesHolder - SavedEntitiesHolder@14848cee updates entities: [com.haulmont.cuba.core.entity.Category-a92546eb-6a75-883e-4f7a-efb2d039e21c [new,managed]]
+2020-01-28 22:12:16.969 DEBUG [http-nio-8080-exec-5/app-core/admin] com.haulmont.cuba.core.app.SavedEntitiesHolder - Released SavedEntitiesHolder@14848cee
+2020-01-28 22:12:17.037 DEBUG [http-nio-8080-exec-5/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - loadList: metaClass=sys$Category, view=com.haulmont.cuba.core.entity.Category/_local, query=Query{queryString=' select c from sys$Category c where c.special is null order by c.createTs ', condition=null, sort=null, firstResult=0, maxResults=50}, max=50
+2020-01-28 22:12:19.105 DEBUG [http-nio-8080-exec-14/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - loadList: metaClass=sys$CategoryAttribute, view=com.haulmont.cuba.core.entity.CategoryAttribute/_local, query=Query{queryString=' select c from sys$CategoryAttribute c where c.category = :ds_categoriesDs ', condition=null, sort=null, firstResult=0, maxResults=10000}, max=10000
+2020-01-28 22:12:31.692 DEBUG [http-nio-8080-exec-8/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - loadList: metaClass=sec$Filter, view=com.haulmont.cuba.security.entity.FilterEntity/app, query=Query{queryString='select f from sec$Filter f left join f.user u where f.componentId = :component and (u.id = :userId or u is null) order by f.name', condition=null, sort=null, firstResult=0, maxResults=0}
+2020-01-28 22:12:31.719 DEBUG [http-nio-8080-exec-8/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - loadList: metaClass=mailreader_Tracker, view=com.company.mailreader.entity.Tracker/, query=Query{queryString='select e from mailreader_Tracker e', condition=null, sort=null, firstResult=0, maxResults=50}, max=50
+2020-01-28 22:13:09.112 DEBUG [http-nio-8080-exec-23/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - commit: commitInstances=[], removeInstances=[com.company.mailreader.entity.Tracker-a9d65e2a-626d-ef51-c108-a6fc25e162a7 [detached], com.company.mailreader.entity.Tracker-2c0da002-2dc4-35ca-6b9d-19ae530970b3 [detached], com.company.mailreader.entity.Tracker-12b01721-8f39-5fae-f790-c701087dc207 [detached], com.company.mailreader.entity.Tracker-d8af7089-3cb0-fd11-95ee-b9950afde4df [detached]]
+2020-01-28 22:13:09.154 DEBUG [http-nio-8080-exec-23/app-core/admin] com.haulmont.cuba.core.app.SavedEntitiesHolder - Created SavedEntitiesHolder@2bc6101d
+2020-01-28 22:13:09.154 DEBUG [http-nio-8080-exec-23/app-core/admin] com.haulmont.cuba.core.app.SavedEntitiesHolder - SavedEntitiesHolder@2bc6101d updates entities: [com.company.mailreader.entity.Tracker-a9d65e2a-626d-ef51-c108-a6fc25e162a7 [managed], com.company.mailreader.entity.Tracker-2c0da002-2dc4-35ca-6b9d-19ae530970b3 [managed], com.company.mailreader.entity.Tracker-12b01721-8f39-5fae-f790-c701087dc207 [managed], com.company.mailreader.entity.Tracker-d8af7089-3cb0-fd11-95ee-b9950afde4df [managed]]
+2020-01-28 22:13:09.176 DEBUG [http-nio-8080-exec-23/app-core/admin] com.haulmont.cuba.core.app.SavedEntitiesHolder - Released SavedEntitiesHolder@2bc6101d
+2020-01-28 22:13:09.182 DEBUG [http-nio-8080-exec-23/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - loadList: metaClass=mailreader_Tracker, view=com.company.mailreader.entity.Tracker/, query=Query{queryString='select e from mailreader_Tracker e', condition=null, sort=null, firstResult=0, maxResults=50}, max=50
+2020-01-28 22:23:08.502 INFO  [main] com.haulmont.cuba.core.sys.AppComponents - Using app components: [com.haulmont.cuba]
+2020-01-28 22:23:08.574 INFO  [main] com.haulmont.cuba.core.sys.AbstractWebAppContextLoader - Loading app properties from classpath:com/company/mailreader/web-app.properties
+2020-01-28 22:23:08.654 INFO  [main] com.haulmont.cuba.core.sys.environmentcheck.EnvironmentChecksRunner - Environment checks on web module completed successfully
+2020-01-28 22:23:10.939 INFO  [main] com.haulmont.cuba.core.sys.remoting.discovery.StaticServerSelector - Server URLs: [http://localhost:8080/app-core/remoting]
+2020-01-28 22:23:10.958 INFO  [main] com.haulmont.cuba.web.sys.remoting.WebRemoteProxyBeanCreator - Configuring proxy beans for local service invocations: [cuba_ConstraintScriptValidationService, cuba_AuthenticationService, cuba_TrustedClientService, cuba_ServerInfoService, cuba_UserSettingService, cuba_UserManagementService, cuba_DataService, cuba_ConfigStorageService, cuba_PersistenceManagerService, cuba_LockService, cuba_UserSessionService, cuba_FoldersService, cuba_EmailService, cuba_FileStorageService, cuba_EntitySnapshotService, cuba_UniqueNumbersService, cuba_LocalizedMessageService, cuba_ResourceService, cuba_ScheduledTasksService, cuba_EntityLogService, cuba_TestingService, cuba_DomainDescriptionService, cuba_RelatedEntitiesService, cuba_EntitySqlGenerationService, cuba_NumberIdService, cuba_QueryResultsService, cuba_DynamicAttributesCacheService, cuba_EntityRestoreService, cuba_LocalFileExchangeService, cuba_EntityImportExportService, cuba_ConstraintLocalizationService, cuba_AttributeAccessService, cuba_ExceptionReportService, cuba_BulkEditorDataService, cuba_AttributeOptionsLoaderService]
+2020-01-28 22:23:10.960 INFO  [main] com.haulmont.cuba.web.sys.remoting.WebRemoteProxyBeanCreator - Configuring proxy beans for local service invocations: [mailreader_ImapService, mailreader_ReceiveEmailsService]
+2020-01-28 22:23:12.278 INFO  [main] com.haulmont.cuba.core.sys.CubaThreadPoolTaskScheduler - Initializing ExecutorService 'scheduler'
+2020-01-28 22:23:12.482 INFO  [main] com.haulmont.cuba.core.sys.jmx.MBeanExporter - Registering beans for JMX exposure: [app.cuba:type=ConfigStorage, app.cuba:type=CachingFacade, app.cuba:type=FileUploading, app.cuba:type=JmxNodeIdentifier, app.cuba:type=JmxLogControl, app.cuba:type=ClassLoaderManager, app.cuba:type=StatisticsCounter]
+2020-01-28 22:23:12.608 DEBUG [main] com.haulmont.cuba.gui.components.impl.ActionsImpl - Actions initialized in 29 ms
+2020-01-28 22:23:12.614 INFO  [main] com.haulmont.cuba.core.sys.MetadataImpl - Initializing metadata
+2020-01-28 22:23:12.839 INFO  [main] com.haulmont.cuba.core.sys.MetadataImpl - Metadata initialized in 225 ms
+2020-01-28 22:23:12.863 INFO  [main] com.haulmont.cuba.core.sys.AbstractWebAppContextLoader - AppContext started
+2020-01-28 22:23:12.888 INFO  [main] com.haulmont.cuba.web.sys.CubaDispatcherServlet - Initializing Servlet 'dispatcher'
+2020-01-28 22:23:13.238 DEBUG [main] org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider
+2020-01-28 22:23:13.787 INFO  [main] com.haulmont.cuba.web.sys.CubaDispatcherServlet - Completed initialization in 899 ms
+2020-01-28 22:23:13.871 INFO  [main] com.haulmont.cuba.core.sys.AppComponents - Using app components: [com.haulmont.cuba]
+2020-01-28 22:23:13.879 INFO  [main] com.haulmont.cuba.core.sys.AbstractWebAppContextLoader - Loading app properties from classpath:com/company/mailreader/app.properties
+2020-01-28 22:23:13.885 INFO  [main] com.haulmont.cuba.core.sys.AppContextLoader - DbmsType of the main database is set to hsql
+2020-01-28 22:23:13.895 INFO  [main] com.haulmont.cuba.core.sys.environmentcheck.DataStoresCheck - Checking connection to data store _MAIN_
+2020-01-28 22:23:14.236 INFO  [main] com.haulmont.cuba.core.sys.environmentcheck.EnvironmentChecksRunner - Environment checks on core module completed successfully
+2020-01-28 22:23:14.315 INFO  [main] com.haulmont.cuba.core.sys.persistence.PersistenceConfigProcessor - Creating file /home/brrr/StudioProjects/mailreader/deploy/tomcat/work/app-core/persistence.xml
+2020-01-28 22:23:18.158 INFO  [main] com.haulmont.cuba.core.sys.CubaThreadPoolTaskScheduler - Initializing ExecutorService 'scheduler'
+2020-01-28 22:23:18.441 INFO  [main] com.haulmont.cuba.core.sys.jmx.MBeanExporter - Registering beans for JMX exposure: [app-core.cuba:type=PersistenceManager, app-core.cuba:type=ConfigStorage, app-core.cuba:type=UserSessions, app-core.cuba:type=UniqueNumbers, app-core.cuba:type=Emailer, app-core.cuba:type=EntityLog, app-core.cuba:type=FileStorage, app-core.cuba:type=LockManager, app-core.cuba:type=CachingFacade, app-core.cuba:type=ClusterManager, app-core.cuba:type=ScriptingManager, app-core.cuba:type=ServerInfo, app-core.cuba:type=Scheduling, app-core.cuba:type=PasswordEncryptionSupport, app-core.cuba:type=JmxNodeIdentifier, app-core.cuba:type=JmxLogControl, app-core.cuba:type=ClassLoaderManager, app-core.cuba:type=StatisticsCounter, app-core.cuba:type=BruteForceProtection, app-core.cuba:type=QueryCacheSupport]
+2020-01-28 22:23:18.647 INFO  [main] com.haulmont.cuba.core.sys.MetadataImpl - Initializing metadata
+2020-01-28 22:23:18.801 INFO  [main] com.haulmont.cuba.core.sys.MetadataImpl - Metadata initialized in 153 ms
+2020-01-28 22:23:18.910 DEBUG [main] com.haulmont.cuba.security.auth.AnonymousSessionHolder - Initialize anonymous session
+2020-01-28 22:23:19.590 INFO  [main/app-core/server] com.haulmont.cuba.core.app.ConfigStorage - Loading DB-stored app properties cache
+2020-01-28 22:23:20.014 INFO  [main/app-core/server] com.haulmont.cuba.core.sys.DefaultPermissionValuesConfig - Initializing default permission values
+2020-01-28 22:23:20.114 INFO  [main/app-core/server] com.haulmont.cuba.security.auth.AuthenticationManagerBean - Logged in: d6916d55-fa61-3e0f-9257-f66c67882e8e [anonymous]
+2020-01-28 22:23:20.115 DEBUG [main] com.haulmont.cuba.security.auth.AnonymousSessionHolder - Anonymous session initialized with id d6916d55-fa61-3e0f-9257-f66c67882e8e
+2020-01-28 22:23:20.116 INFO  [main] com.haulmont.cuba.core.sys.AbstractWebAppContextLoader - AppContext started
+2020-01-28 22:23:20.118 INFO  [main] com.haulmont.cuba.core.sys.remoting.RemotingServlet - Initializing Servlet 'remoting'
+2020-01-28 22:23:20.145 INFO  [main] com.haulmont.cuba.core.sys.remoting.RemoteServicesBeanCreator - Configuring remote services
+2020-01-28 22:23:20.261 DEBUG [cuba_core_scheduler-5] com.haulmont.cuba.core.app.queryresults.QueryResultsManager - Delete query results for inactive user sessions
+2020-01-28 22:23:20.300 INFO  [main] com.haulmont.cuba.core.sys.remoting.RemotingServlet - Completed initialization in 182 ms
+2020-01-28 22:23:20.513 WARN  [http-nio-8080-exec-2] com.vaadin.server.DefaultDeploymentConfiguration - 
+=================================================================
+Vaadin is running in DEBUG MODE.
+Add productionMode=true to web.xml to disable debug features.
+To show debug window, add ?debug to your application URL.
+=================================================================
+2020-01-28 22:23:50.434 DEBUG [http-nio-8080-exec-1] com.haulmont.cuba.web.App - Initializing application
+2020-01-28 22:23:50.444 DEBUG [http-nio-8080-exec-1] com.haulmont.cuba.gui.theme.ThemeConstantsRepository - Loading theme constants
+2020-01-28 22:23:50.483 DEBUG [http-nio-8080-exec-1] com.haulmont.cuba.web.security.WebAnonymousSessionHolder - Loading anonymous session
+2020-01-28 22:23:50.726 DEBUG [http-nio-8080-exec-1] com.haulmont.cuba.web.security.WebAnonymousSessionHolder - Anonymous session loaded with id d6916d55-fa61-3e0f-9257-f66c67882e8e
+2020-01-28 22:23:50.747 DEBUG [http-nio-8080-exec-1/app/anonymous] com.haulmont.cuba.web.DefaultApp - connectionStateChanged connected: true, authenticated: false
+2020-01-28 22:23:50.748 DEBUG [http-nio-8080-exec-1/app/anonymous] com.haulmont.cuba.web.App - Closing all windows in all UIs
+2020-01-28 22:23:50.795 INFO  [http-nio-8080-exec-1/app/anonymous] com.haulmont.cuba.gui.config.WindowConfig - WindowConfig initialized in 34 ms
+2020-01-28 22:23:51.610 WARN  [http-nio-8080-exec-7/app/anonymous] com.vaadin.server.communication.PushHandler - Invalid identifier in new connection received from 0.0.0.0
+2020-01-28 22:23:53.839 INFO  [http-nio-8080-exec-10/app-core/server] com.haulmont.cuba.security.auth.AuthenticationManagerBean - Logged in: 3304d632-c064-b6c9-62a5-2d02d496f47e [admin]
+2020-01-28 22:23:53.853 DEBUG [http-nio-8080-exec-10/app/admin] com.haulmont.cuba.web.DefaultApp - connectionStateChanged connected: true, authenticated: true
+2020-01-28 22:23:53.854 DEBUG [http-nio-8080-exec-10/app/admin] com.haulmont.cuba.web.App - Closing all windows in all UIs
+2020-01-28 22:23:53.858 DEBUG [http-nio-8080-exec-10/app/admin] com.haulmont.cuba.web.DefaultApp - Session reinitialized: HttpSession=org.apache.catalina.session.StandardSessionFacade@1bbe76df, timeout=1800sec, UserSession=3304d632-c064-b6c9-62a5-2d02d496f47e [admin]
+2020-01-28 22:23:54.093 INFO  [http-nio-8080-exec-10/app-core/admin] com.haulmont.cuba.core.sys.AbstractViewRepository - Initializing views
+2020-01-28 22:23:54.112 DEBUG [http-nio-8080-exec-10/app-core/admin] com.haulmont.cuba.core.app.StoreFactory - No implementation is specified for _MAIN_ store, using RdbmsStore
+2020-01-28 22:23:54.142 DEBUG [http-nio-8080-exec-10/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - loadList: metaClass=sec$UserSubstitution, view=com.haulmont.cuba.security.entity.UserSubstitution/app, query=Query{queryString='select us from sec$UserSubstitution us where us.user.id = :userId and (us.endDate is null or us.endDate >= :currentDate) and (us.startDate is null or us.startDate <= :currentDate) and (us.substitutedUser.active = true or us.substitutedUser.active is null) order by us.substitutedUser.name', condition=null, sort=null, firstResult=0, maxResults=0}
+2020-01-28 22:24:08.770 INFO  [http-nio-8080-exec-11/app/admin] com.haulmont.cuba.core.sys.AbstractViewRepository - Initializing views
+2020-01-28 22:24:08.804 INFO  [http-nio-8080-exec-11/app-core/admin] com.haulmont.cuba.core.app.PersistenceManager - Loading statistics cache
+2020-01-28 22:24:09.089 DEBUG [http-nio-8080-exec-11/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - loadList: metaClass=sec$Filter, view=com.haulmont.cuba.security.entity.FilterEntity/app, query=Query{queryString='select f from sec$Filter f left join f.user u where f.componentId = :component and (u.id = :userId or u is null) order by f.name', condition=null, sort=null, firstResult=0, maxResults=0}
+2020-01-28 22:24:09.167 DEBUG [http-nio-8080-exec-11/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - loadList: metaClass=sec$Presentation, view=com.haulmont.cuba.security.entity.Presentation/app, query=Query{queryString='select p from sec$Presentation p where p.componentId = :component and (p.user is null or p.user.id = :userId)', condition=null, sort=null, firstResult=0, maxResults=0}
+2020-01-28 22:24:09.642 DEBUG [http-nio-8080-exec-11/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - loadList: metaClass=sys$ScheduledTask, view=com.haulmont.cuba.core.entity.ScheduledTask/_local, query=Query{queryString=' select t from sys$ScheduledTask t order by t.beanName, t.methodName ', condition=null, sort=null, firstResult=0, maxResults=50}, max=50
+2020-01-28 22:24:15.790 INFO  [ScheduledRunnerThread-1/app-core/server] com.haulmont.cuba.security.auth.AuthenticationManagerBean - Logged in: cb5b819e-1e30-d853-1fd1-41f6d6a4d109 [admin]
+2020-01-28 22:24:17.146 DEBUG [ScheduledRunnerThread-1/app-core/admin] com.haulmont.cuba.security.app.EntityLog - Loading entities
+2020-01-28 22:24:17.154 DEBUG [ScheduledRunnerThread-1/app-core/admin] com.haulmont.cuba.security.app.EntityLog - Loaded: entitiesAuto=0, entitiesManual=0
+2020-01-28 22:24:24.352 DEBUG [http-nio-8080-exec-6/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - loadList: metaClass=sec$Filter, view=com.haulmont.cuba.security.entity.FilterEntity/app, query=Query{queryString='select f from sec$Filter f left join f.user u where f.componentId = :component and (u.id = :userId or u is null) order by f.name', condition=null, sort=null, firstResult=0, maxResults=0}
+2020-01-28 22:24:24.394 DEBUG [http-nio-8080-exec-6/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - loadList: metaClass=mailreader_Tracker, view=com.company.mailreader.entity.Tracker/, query=Query{queryString='select e from mailreader_Tracker e', condition=null, sort=null, firstResult=0, maxResults=50}, max=50
+2020-01-28 22:24:24.575 DEBUG [http-nio-8080-exec-4/app/admin] com.haulmont.cuba.web.log.AppLog - WARNING: ClientAbortException on write response to client. Most likely client (browser) closed socket.
+2020-01-28 22:24:24.575 DEBUG [http-nio-8080-exec-9/app/admin] com.haulmont.cuba.web.log.AppLog - WARNING: ClientAbortException on write response to client. Most likely client (browser) closed socket.
+2020-01-28 22:24:24.585 DEBUG [http-nio-8080-exec-19/app/admin] com.haulmont.cuba.web.log.AppLog - WARNING: ClientAbortException on write response to client. Most likely client (browser) closed socket.
+2020-01-28 22:26:00.301 INFO  [cuba_core_scheduler-8] com.haulmont.cuba.core.sys.TriggerFilesProcessor - Calling cuba_ClassLoaderManager.reloadClass('com.company.mailreader.service.ReceiveEmailsServiceBean')
+2020-01-28 22:26:02.052 INFO  [cuba_core_scheduler-8] com.haulmont.cuba.core.sys.remoting.RemoteServicesBeanCreator - Configuring remote services
+2020-01-28 22:26:05.377 DEBUG [http-nio-8080-exec-19/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - loadList: metaClass=sec$Filter, view=com.haulmont.cuba.security.entity.FilterEntity/app, query=Query{queryString='select f from sec$Filter f left join f.user u where f.componentId = :component and (u.id = :userId or u is null) order by f.name', condition=null, sort=null, firstResult=0, maxResults=0}
+2020-01-28 22:26:05.424 INFO  [ClientCacheManager-pool-2-thread-1/app-core/server] com.haulmont.cuba.security.auth.AuthenticationManagerBean - Logged in: 507956fd-3099-d9ef-54d3-8ec64b1cb978 [admin]
+2020-01-28 22:26:05.504 DEBUG [http-nio-8080-exec-19/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - loadList: metaClass=sec$Presentation, view=com.haulmont.cuba.security.entity.Presentation/app, query=Query{queryString='select p from sec$Presentation p where p.componentId = :component and (p.user is null or p.user.id = :userId)', condition=null, sort=null, firstResult=0, maxResults=0}
+2020-01-28 22:26:05.546 DEBUG [http-nio-8080-exec-19/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - loadList: metaClass=sys$ScheduledTask, view=com.haulmont.cuba.core.entity.ScheduledTask/_local, query=Query{queryString=' select t from sys$ScheduledTask t order by t.beanName, t.methodName ', condition=null, sort=null, firstResult=0, maxResults=50}, max=50
+2020-01-28 22:26:15.735 DEBUG [http-nio-8080-exec-25/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - load: metaClass=sys$ScheduledTask, id=4d6a1cc0-8396-8517-6ae4-7c598776fbc5, view=com.haulmont.cuba.core.entity.ScheduledTask/_local
+2020-01-28 22:26:15.794 DEBUG [http-nio-8080-exec-25/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - load: metaClass=sec$User, id=null, view=com.haulmont.cuba.security.entity.User/scheduling
